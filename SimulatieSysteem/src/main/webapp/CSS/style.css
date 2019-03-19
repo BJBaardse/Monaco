@@ -52,56 +52,56 @@ main{
 }
 
 #tile_monitoring{
-    background-image: url("../img/Optimized-monitoring.jpeg");
+    background-image: url("../Images/Optimized-monitoring.jpeg");
 }
 
 #tile_simulatie{
-    background-image: url("../img/Optimized-simulation.jpg");
+    background-image: url("../Images/Optimized-simulation.jpg");
 }
 
 #tile_politie{
-    background-image: url("../img/Optimized-politievolgsysteem.jpeg");
+    background-image: url("../Images/Optimized-politievolgsysteem.jpeg");
 }
 #tile_landen{
-    background-image: url("../img/Optimized-landmonitoring.jpeg");
+    background-image: url("../Images/Optimized-landmonitoring.jpeg");
 }
 #tile_rekeningapp{
-    background-image: url("../img/rekeningrijdersapp.jpg");
+    background-image: url("../Images/rekeningrijdersapp.jpg");
 }
 #tile_rekeningadmin{
-    background-image: url("../img/Optimized-rekeningadministratie.jpeg");
+    background-image: url("../Images/Optimized-rekeningadministratie.jpeg");
 }
 #tile_verplaatsing{
-    background-image: url("../img/Optimized-Verplaatsingregistratiesysteem.jpeg");
+    background-image: url("../Images/Optimized-Verplaatsingregistratiesysteem.jpeg");
 }
 #tile_europeesdata{
-    background-image: url("../img/Optimized-europesedatauitwissel.jpeg");
+    background-image: url("../Images/Optimized-europesedatauitwissel.jpeg");
 }
 #tile_documenten{
-    background-image: url("../img/Optimized-Documenten.jpeg");
+    background-image: url("../Images/Optimized-Documenten.jpeg");
 }
 #tile_sonarqube{
-    background-image: url("../img/sonarqube.png");
+    background-image: url("../Images/sonarqube.png");
     border: 1px solid grey;
     background-color: transparent;
 }
 #tile_jenkins{
-    background-image: url("../img/jenkins.png");
+    background-image: url("../Images/jenkins.png");
     border: 1px solid grey;
     background-color: transparent;
 }
 #tile_artifactory{
-    background-image: url("../img/artifactory.png");
+    background-image: url("../Images/artifactory.png");
     border: 1px solid grey;
     background-color: transparent;
 }
 #tile_youtrack{
-    background-image: url("../img/youtrack.png");
+    background-image: url("../Images/youtrack.png");
     border: 1px solid grey;
     background-color: transparent;
 }
 #tile_splunk{
-    background-image: url("../img/splunk.png");
+    background-image: url("../Images/splunk.png");
 }
 
 header{
@@ -110,7 +110,7 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image:URL("../img/header_img.jpg");
+    background-image:URL("../Images/header_img.jpg");
     background-size:cover;
     margin-bottom: 15px;
     color: #fcfcfc;
