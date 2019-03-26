@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SimulatieSysteem:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/SimulatieSysteem_war</output-path>
+    <root id="archive" name="SimulatieSysteem_war.war">
+      <element id="artifact" artifact-name="SimulatieSysteem:war exploded" />
+    </root>
+  </artifact>
+</component>
