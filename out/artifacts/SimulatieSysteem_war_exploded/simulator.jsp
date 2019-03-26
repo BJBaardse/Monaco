@@ -22,7 +22,35 @@
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
         center: [7.482523, 43.704097], // starting position [lng, lat]
-        zoom: 12 // starting zoom
+        zoom: 11 // starting zoom
+    });
+
+    map.on('load', function() {
+        map.loadImage('Images/SuzikiCarAbove.png', function(error, image) {
+            if (error) throw error;
+            map.addImage('car', image);
+            map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [7.482523, 43.704097]
+                            }
+                        }]
+                    }
+                },
+                "layout": {
+                    "icon-image": "car",
+                    "icon-size": 15
+                }
+            });
+        });
     });
 </script>
 

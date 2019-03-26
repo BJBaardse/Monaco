@@ -16,13 +16,45 @@
 <body>
 
 <div id='map'></div>
+
 <script>
+
+
     mapboxgl.accessToken = 'pk.eyJ1Ijoiam9leWJ1cmdlcnMwOTkiLCJhIjoiY2p0cG9iOTZtMDY2azRlczdybHU5OTU2eiJ9.BScZE0DWOamSxZpiYzf4pQ';
+
     var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
         center: [7.482523, 43.704097], // starting position [lng, lat]
-        zoom: 13 // starting zoom
+        zoom: 11 // starting zoom
+    });
+
+    map.on('load', function() {
+        map.loadImage('Images/SuzikiCarAbove.png', function(error, image) {
+            if (error) throw error;
+            map.addImage('car', image);
+            map.addLayer({
+                "id": "points",
+                "type": "symbol",
+                "source": {
+                    "type": "geojson",
+                    "data": {
+                        "type": "FeatureCollection",
+                        "features": [{
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [7.482523, 43.704097]
+                            }
+                        }]
+                    }
+                },
+                "layout": {
+                    "icon-image": "car",
+                    "icon-size": 15
+                }
+            });
+        });
     });
 </script>
 
