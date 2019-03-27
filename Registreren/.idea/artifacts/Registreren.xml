@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Registreren">
+    <output-path>$PROJECT_DIR$/out/artifacts/Registreren</output-path>
+    <root id="archive" name="Registreren.war" />
+  </artifact>
+</component>

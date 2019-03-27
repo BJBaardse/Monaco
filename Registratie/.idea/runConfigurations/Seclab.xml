@@ -1,0 +1,51 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Seclab" type="GlassfishConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="GlassFish 5.191.0" ALTERNATIVE_JRE_ENABLED="false">
+    <option name="HOST" value="192.168.25.110" />
+    <option name="LOCAL" value="false" />
+    <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+    <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+    <deployment>
+      <artifact name="Registratie:war">
+        <settings />
+      </artifact>
+    </deployment>
+    <server-settings>
+      <data>
+        <option name="adminServerHost" value="" />
+        <option name="clusterName" value="" />
+        <option name="password" value="powerabusers" />
+        <option name="secured" value="true" />
+        <option name="stagingRemotePath" value="" />
+        <option name="transportHostId" />
+        <option name="transportStagingTarget">
+          <TransportTarget>
+            <option name="id" value="298ce636-81d3-48ad-9580-cba52a13ca09" />
+            <id>298ce636-81d3-48ad-9580-cba52a13ca09</id>
+          </TransportTarget>
+        </option>
+        <password>powerabusers</password>
+        <secured>true</secured>
+        <admin-server-host />
+        <cluster-name />
+        <transport-target>
+          <TransportTarget>
+            <option name="id" value="298ce636-81d3-48ad-9580-cba52a13ca09" />
+            <id>298ce636-81d3-48ad-9580-cba52a13ca09</id>
+          </TransportTarget>
+        </transport-target>
+        <staging-path />
+        <host-id />
+      </data>
+    </server-settings>
+    <predefined_log_file id="GlassFish" enabled="true" />
+    <RunnerSettings RunnerId="Debug">
+      <option name="DEBUG_PORT" value="1890" />
+      <option name="LOCAL" value="false" />
+    </RunnerSettings>
+    <method>
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="Registratie:war" />
+      </option>
+    </method>
+  </configuration>
+</component>
