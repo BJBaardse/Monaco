@@ -1,5 +1,6 @@
 package JWT;
 
+
 import javax.ws.rs.NameBinding;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -11,5 +12,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @NameBinding
 @Retention(RUNTIME)
 @Target({TYPE, METHOD})
-public @interface JWT { }
+public @interface JWT {
+}
 

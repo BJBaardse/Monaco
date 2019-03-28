@@ -7,7 +7,11 @@ import java.util.List;
 @Entity
 @Table(name ="Users")
 @Cacheable(false)
-@NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password")
+@NamedQueries({
+        @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
+        @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
+})
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -62,9 +66,9 @@ public class User {
         this.email = email;
     }
 
-    public String getPassword() {
+    /*public String getPassword() {
         return password;
-    }
+    }*/
 
     public void setPassword(String password) {
         this.password = password;

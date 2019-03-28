@@ -1,17 +1,23 @@
 package JWT;
 
+import JWT.Authenticated.AuthenticatedUser;
+import Shared.Models.User;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
 import javax.annotation.Priority;
+import javax.enterprise.event.Event;
+import javax.inject.Inject;
 import javax.ws.rs.Priorities;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.Response;
+import javax.ws.rs.core.SecurityContext;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
+import java.security.Principal;
 
 @JWT
 @Provider
@@ -21,8 +27,16 @@ public class AuthenticationFilter implements ContainerRequestFilter {
     private static final String REALM = "example";
     private static final String AUTHENTICATION_SCHEME = "Bearer";
 
+
+    @Inject
+    @AuthenticatedUser
+    Event<Integer> userAuthenticatedEvent;
+
+
+
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
+
 
         // Get the Authorization header from the request
         String authorizationHeader =
@@ -71,10 +85,13 @@ public class AuthenticationFilter implements ContainerRequestFilter {
     private void validateToken(String token) throws Exception {
         // Check if the token was issued by the server and if it's not expired
         // Throw an Exception if the token is invalid
-        Algorithm algorithm = Algorithm.HMAC256("secret");
+        Algorithm algorithm = Algorithm.HMAC256("powerabusers");
         JWTVerifier verifier = com.auth0.jwt.JWT.require(algorithm)
-                .withIssuer("Bart")
+                .withIssuer("Monaco")
                 .build(); //Reusable verifier instance
         DecodedJWT jwt = verifier.verify(token);
+
+        userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
+
     }
 }
