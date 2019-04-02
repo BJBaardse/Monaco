@@ -3,15 +3,14 @@ package Shared.Models;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import java.util.ArrayList;
 import java.util.List;
 @Entity
 @Table(name ="Users")
-@Cacheable(false)
 @NamedQueries({
         @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
 })
-
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,6 +32,10 @@ public class User {
     @Column(name="Role_Name", nullable=false)
     private List<Role> Roles;
     private int BSN;
+
+    @OneToMany()
+    private List<Vehicle> Vehicles = new ArrayList<>();
+
 
     public int getId() {
         return id;
@@ -88,6 +91,18 @@ public class User {
 
     public void setBSN(int BSN) {
         this.BSN = BSN;
+    }
+
+    public List<Shared.Models.Vehicle> getVehicle() {
+        return Vehicles;
+    }
+
+    public void setVehicle(List<Shared.Models.Vehicle> vehicle) {
+        Vehicles = vehicle;
+    }
+
+    public void addVehicle(Shared.Models.Vehicle vehicle) {
+        Vehicles.add(vehicle);
     }
 
     public User() {

@@ -27,5 +27,5 @@ public class CorsFilter implements ContainerResponseFilter {
                     "Access-Control-Allow-Methods",
                     "GET, POST, PUT, DELETE, OPTIONS, HEAD");
         }
-    
+
 }

@@ -58,8 +58,13 @@ public class AuthController {
 
             // Authenticate the user using the credentials provided
             userService.createUser(u);
+            User user = authenticate(u.getEmail(), password);
+
+            String token = issueToken(user);
             // Return the token on the response
-            return Response.status(Response.Status.ACCEPTED).build();
+
+
+            return Response.ok(token).build();
 
         } catch (Exception e) {
             return Response.status(Response.Status.NOT_ACCEPTABLE).build();
