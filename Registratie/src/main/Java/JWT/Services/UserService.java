@@ -1,5 +1,6 @@
 package JWT.Services;
 
+import Shared.Models.IUser;
 import Shared.Models.User;
 
 
@@ -49,12 +50,13 @@ public class UserService {
         return u;
     }
 
-    public User UpdateUser(User user){
+    public User UpdateUser(User user, int ID){
+        user.setId(ID);
         em.getTransaction().begin();
+
         em.merge(user);
         em.getTransaction().commit();
-        em.flush();
-        return em.find(User.class,user);
+        return em.find(User.class,user.getId());
     }
 
 }

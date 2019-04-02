@@ -1,8 +1,9 @@
 package Shared.Models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public interface IUser {
+public interface IUser extends Serializable {
     public int getId();
 
     public void setId(int id);
@@ -19,9 +20,7 @@ public interface IUser {
 
     public void setEmail(String email);
 
-    /*public String getPassword() {
-        return password;
-    }*/
+    public String getPassword();
 
     public void setPassword(String password);
 

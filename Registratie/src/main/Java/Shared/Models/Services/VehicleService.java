@@ -44,6 +44,7 @@ public class VehicleService {
     }
 
     public Vehicle UpdateVehicle(Vehicle vehicle){
+
         em.getTransaction().begin();
         em.merge(vehicle);
         em.getTransaction().commit();

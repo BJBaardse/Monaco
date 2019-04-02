@@ -22,7 +22,7 @@ public class UserController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-     public IUser authenticateUser() {
+     public User authenticateUser() {
         return user;
     }
     @Path("userID")
@@ -35,8 +35,9 @@ public class UserController {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public IUser UpdateUser(User u) {
-        return userService.UpdateUser(userService.GetUserID(user.getId()));
+    public User UpdateUser(User u) {
+        //return u;
+        return userService.UpdateUser(u,1);
     }
 
 }

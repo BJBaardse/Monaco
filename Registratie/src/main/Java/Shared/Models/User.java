@@ -15,7 +15,7 @@ import java.util.List;
         @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
 })
-public class User implements Serializable,IUser {
+public class User implements IUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -25,7 +25,7 @@ public class User implements Serializable,IUser {
     @Column(unique=true)
     private String email;
 
-    @NotEmpty(message = "password cannot be Empty")
+    //@NotEmpty(message = "password cannot be Empty")
     private String password;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -73,9 +73,9 @@ public class User implements Serializable,IUser {
         this.email = email;
     }
 
-    /*public String getPassword() {
+    public String getPassword() {
         return password;
-    }*/
+    }
 
     public void setPassword(String password) {
         this.password = password;

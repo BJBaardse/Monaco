@@ -37,6 +37,7 @@ public class VehicleController {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Vehicle UpdatedVehicle(Vehicle vehicle){
+        vehicle.setOwner(user);
         return vehicleService.UpdateVehicle(vehicle);
     }
 
@@ -45,6 +46,7 @@ public class VehicleController {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public void DeleteVehicle(Vehicle vehicle){
+        vehicle.setOwner(user);
         vehicleService.RemoveVehicle(vehicle);
     }
 
@@ -55,7 +57,6 @@ public class VehicleController {
     public List<Vehicle> ADDVehicle(Vehicle vehicle){
         vehicle.setOwner(user);
         vehicleService.CreateVehicle(vehicle);
-        user.addVehicle(vehicle);
         return user.getVehicle();
     }
 }
