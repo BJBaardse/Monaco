@@ -1,8 +1,12 @@
 package Shared.Models;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 @Entity
@@ -11,7 +15,7 @@ import java.util.List;
         @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
 })
-public class User {
+public class User implements Serializable,IUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -32,8 +36,8 @@ public class User {
     @Column(name="Role_Name", nullable=false)
     private List<Role> Roles;
     private int BSN;
-
-    @OneToMany()
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "Owner")
     private List<Vehicle> Vehicles = new ArrayList<>();
 
 

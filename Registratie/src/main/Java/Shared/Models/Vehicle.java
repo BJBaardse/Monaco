@@ -21,7 +21,7 @@ public class Vehicle {
     private boolean stolen;
     private int weight;
     private int wheels;
-    @ManyToOne(cascade={PERSIST, MERGE, REMOVE, REFRESH, DETACH})
+    @ManyToOne(cascade={PERSIST, MERGE, REMOVE, REFRESH, DETACH}, fetch = FetchType.EAGER)
     @JoinColumn(name = "Owner_id", nullable = false)
     private User Owner;
 

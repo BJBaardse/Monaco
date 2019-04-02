@@ -44,7 +44,17 @@ public class UserService {
 
     public User GetUserID(int ID){
 
-        return em.createNamedQuery("ID", User.class).setParameter("ID", ID).getSingleResult();
+        User u =em.createNamedQuery("ID", User.class).setParameter("ID", ID).getSingleResult();
+
+        return u;
+    }
+
+    public User UpdateUser(User user){
+        em.getTransaction().begin();
+        em.merge(user);
+        em.getTransaction().commit();
+        em.flush();
+        return em.find(User.class,user);
     }
 
 }
