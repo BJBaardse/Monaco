@@ -32,11 +32,11 @@ public interface IUser extends Serializable {
 
     public void setBSN(int BSN);
 
-    public List<Shared.Models.Vehicle> getVehicle();
-
-    public void setVehicle(List<Shared.Models.Vehicle> vehicle);
-
-    public void addVehicle(Shared.Models.Vehicle vehicle) ;
+//    public List<Shared.Models.Vehicle> getVehicle();
+//
+//    public void setVehicle(List<Shared.Models.Vehicle> vehicle);
+//
+//    public void addVehicle(Shared.Models.Vehicle vehicle) ;
 
 
 

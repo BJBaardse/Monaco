@@ -2,6 +2,8 @@ package Shared.Models;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
+
 import static javax.persistence.CascadeType.*;
 
 @Entity
@@ -11,22 +13,26 @@ import static javax.persistence.CascadeType.*;
         @NamedQuery(name = "VehicleID", query = "select  v  from Vehicle v where v.id = :ID"),
         @NamedQuery(name = "UserVehicles", query = "select  v  from Vehicle v where v.Owner = :owner")
 })
-public class Vehicle {
+public class Vehicle implements Serializable {
 
     @Id
     @GeneratedValue
     private int vehicleID;
-
+    @Column(unique = true)
     private String license;
     private boolean stolen;
     private int weight;
     private int wheels;
-    @ManyToOne(cascade={PERSIST, MERGE, REMOVE, REFRESH, DETACH}, fetch = FetchType.EAGER)
+    @ManyToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "Owner_id", nullable = false)
     private User Owner;
 
     public int getVehicleID() {
         return vehicleID;
+    }
+
+    public void setVehicleID(int vehicleID) {
+        this.vehicleID = vehicleID;
     }
 
     public String getLicense() {
@@ -72,5 +78,11 @@ public class Vehicle {
     public Vehicle() {
     }
 
-
+    public Vehicle(String license, boolean stolen, int weight, int wheels, User owner) {
+        this.license = license;
+        this.stolen = stolen;
+        this.weight = weight;
+        this.wheels = wheels;
+        Owner = owner;
+    }
 }

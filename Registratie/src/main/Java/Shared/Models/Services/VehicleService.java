@@ -30,27 +30,47 @@ public class VehicleService {
     }
 
     public void CreateVehicle(Vehicle vehicle){
+
+
         em.getTransaction().begin();
+        //User u = em.find(User.class,user.getId());
         em.persist(vehicle);
         em.getTransaction().commit();
-        em.flush();
+
     }
 
-    public void RemoveVehicle(Vehicle vehicle){
-        em.getTransaction().begin();
-        em.remove(vehicle);
-        em.getTransaction().commit();
-        em.flush();
+    public boolean RemoveVehicle(int vehicleID,int userID){
+        try {
+            Vehicle v = em.find(Vehicle.class, vehicleID);
+            if (v.getOwner().getId() == userID) {
+                em.getTransaction().begin();
+
+                em.remove(v);
+                em.getTransaction().commit();
+                em.flush();
+                return true;
+
+            }
+        }catch (Exception e){
+            return false;
+        }
+        return false;
+
     }
 
-    public Vehicle UpdateVehicle(Vehicle vehicle){
+    public Vehicle UpdateVehicle(Vehicle vehicle,int UserID){
 
-        em.getTransaction().begin();
-        em.merge(vehicle);
-        em.getTransaction().commit();
-        em.flush();
+        Vehicle v = em.find(Vehicle.class,vehicle.getVehicleID());
+        if(v.getOwner().getId() == UserID) {
+            em.getTransaction().begin();
+            vehicle.setOwner(v.getOwner());
+            em.merge(vehicle);
+            em.getTransaction().commit();
+            return vehicle;
+        }
 
-        return vehicle;
+
+        return null;
     }
 
 }

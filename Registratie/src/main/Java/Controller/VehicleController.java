@@ -37,26 +37,29 @@ public class VehicleController {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Vehicle UpdatedVehicle(Vehicle vehicle){
-        vehicle.setOwner(user);
-        return vehicleService.UpdateVehicle(vehicle);
+        return vehicleService.UpdateVehicle(vehicle, user.getId());
     }
 
-
+    @Path("remove/{id}")
     @DELETE
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void DeleteVehicle(Vehicle vehicle){
-        vehicle.setOwner(user);
-        vehicleService.RemoveVehicle(vehicle);
+    public boolean  DeleteVehicle(@PathParam("id") int id){
+        //vehicle.setOwner(user);
+        return vehicleService.RemoveVehicle(id, user.getId());
     }
 
     @Path("ADD")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Vehicle> ADDVehicle(Vehicle vehicle){
+    public Vehicle ADDVehicle(Vehicle vehicle){
         vehicle.setOwner(user);
-        vehicleService.CreateVehicle(vehicle);
-        return user.getVehicle();
+        Vehicle v = new Vehicle(vehicle.getLicense(),vehicle.isStolen(),vehicle.getWeight(),vehicle.getWheels(),userService.GetUserID(user.getId()));
+        vehicleService.CreateVehicle(v);
+        return v;
+        //
+
+        //return vehicleService.GetVehicles(user);
     }
 }

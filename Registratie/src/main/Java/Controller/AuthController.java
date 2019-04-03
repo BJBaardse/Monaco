@@ -94,7 +94,7 @@ public class AuthController {
                     .withIssuer("Monaco")
                     .withClaim("ID",user.getId())
                     .withClaim("Roles", String.valueOf(user.getRoles()))
-
+                    .withClaim("Name",user.getName())
                     .sign(algorithm);
             return token;
 

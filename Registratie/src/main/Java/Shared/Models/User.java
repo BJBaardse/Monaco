@@ -36,9 +36,9 @@ public class User implements IUser {
     @Column(name="Role_Name", nullable=false)
     private List<Role> Roles;
     private int BSN;
-    @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(mappedBy = "Owner")
-    private List<Vehicle> Vehicles = new ArrayList<>();
+//    @LazyCollection(LazyCollectionOption.FALSE)
+//    @OneToMany(mappedBy = "Owner")
+//    private List<Vehicle> Vehicles = new ArrayList<>();
 
 
     public int getId() {
@@ -97,17 +97,17 @@ public class User implements IUser {
         this.BSN = BSN;
     }
 
-    public List<Shared.Models.Vehicle> getVehicle() {
-        return Vehicles;
-    }
-
-    public void setVehicle(List<Shared.Models.Vehicle> vehicle) {
-        Vehicles = vehicle;
-    }
-
-    public void addVehicle(Shared.Models.Vehicle vehicle) {
-        Vehicles.add(vehicle);
-    }
+//    public List<Shared.Models.Vehicle> getVehicle() {
+//        return Vehicles;
+//    }
+//
+//    public void setVehicle(List<Shared.Models.Vehicle> vehicle) {
+//        Vehicles = vehicle;
+//    }
+//
+//    public void addVehicle(Shared.Models.Vehicle vehicle) {
+//        Vehicles.add(vehicle);
+//    }
 
     public User() {
     }
