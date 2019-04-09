@@ -1,10 +1,11 @@
 package Shared.Models;
 
-import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
-import static javax.persistence.CascadeType.*;
 
 @Entity
 
@@ -13,6 +14,7 @@ import static javax.persistence.CascadeType.*;
         @NamedQuery(name = "VehicleID", query = "select  v  from Vehicle v where v.id = :ID"),
         @NamedQuery(name = "UserVehicles", query = "select  v  from Vehicle v where v.Owner = :owner")
 })
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Vehicle implements Serializable {
 
     @Id
@@ -23,6 +25,7 @@ public class Vehicle implements Serializable {
     private boolean stolen;
     private int weight;
     private int wheels;
+    @JsonIgnore
     @ManyToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "Owner_id", nullable = false)
     private User Owner;
@@ -66,7 +69,7 @@ public class Vehicle implements Serializable {
     public void setWheels(int aantalWielen) {
         this.wheels = aantalWielen;
     }
-
+    @JsonIgnore
     public User getOwner() {
         return Owner;
     }

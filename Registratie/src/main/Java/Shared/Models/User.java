@@ -1,5 +1,10 @@
 package Shared.Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
@@ -7,7 +12,6 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 @Entity
 @Table(name ="Users")
@@ -15,8 +19,10 @@ import java.util.List;
         @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
         @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
 })
-public class User implements IUser {
+@JsonIgnoreProperties(ignoreUnknown = false)
+public class User implements Serializable {
     @Id
+    @Access(AccessType.PROPERTY)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
@@ -25,7 +31,9 @@ public class User implements IUser {
     @Column(unique=true)
     private String email;
 
-    //@NotEmpty(message = "password cannot be Empty")
+    @NotEmpty(message = "password cannot be Empty")
+
+    @JsonIgnore
     private String password;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -40,7 +48,6 @@ public class User implements IUser {
 //    @OneToMany(mappedBy = "Owner")
 //    private List<Vehicle> Vehicles = new ArrayList<>();
 
-
     public int getId() {
         return id;
     }
@@ -48,7 +55,7 @@ public class User implements IUser {
     public void setId(int id) {
         this.id = id;
     }
-
+    @JsonProperty
     public String getName() {
         return name;
     }
@@ -56,7 +63,7 @@ public class User implements IUser {
     public void setName(String name) {
         this.name = name;
     }
-
+    @JsonProperty
     public String getLastname() {
         return lastname;
     }
@@ -72,7 +79,7 @@ public class User implements IUser {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    @JsonIgnore
     public String getPassword() {
         return password;
     }

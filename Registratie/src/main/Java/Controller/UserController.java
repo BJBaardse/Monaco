@@ -23,12 +23,12 @@ public class UserController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
      public User authenticateUser() {
-        return user;
+        return userService.GetUserID(user.getId());
     }
     @Path("userID")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public IUser UserID() {
+    public User UserID() {
         return userService.GetUserID(user.getId());
     }
 
