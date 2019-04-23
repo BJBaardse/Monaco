@@ -1,6 +1,8 @@
 package JWT;
 
 
+import Shared.Models.Role;
+
 import javax.ws.rs.NameBinding;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -13,5 +15,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Target({TYPE, METHOD})
 public @interface JWT {
+    Role[] Permissions() default Role.DEFAULT;
 }
 

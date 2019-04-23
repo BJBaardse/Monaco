@@ -1,9 +1,11 @@
 package Shared.Models;
 
+import Shared.Models.enums.Brand;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import javax.ws.rs.DefaultValue;
 import java.io.Serializable;
 
 
@@ -12,7 +14,9 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "ALLVehicles", query = "select  v  from Vehicle v"),
         @NamedQuery(name = "VehicleID", query = "select  v  from Vehicle v where v.id = :ID"),
-        @NamedQuery(name = "UserVehicles", query = "select  v  from Vehicle v where v.Owner = :owner")
+        @NamedQuery(name = "UserVehicles", query = "select  v  from Vehicle v where v.Owner = :owner"),
+        @NamedQuery(name = "UserVehiclesActive", query = "select  v  from Vehicle v where v.Owner = :owner and v.isRemoved = false "),
+        @NamedQuery(name = "UserVehiclesDelete", query = "update Vehicle set isRemoved = true where Owner.id = :owner and vehicleID = :vehicleID")
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Vehicle implements Serializable {
@@ -25,10 +29,22 @@ public class Vehicle implements Serializable {
     private boolean stolen;
     private int weight;
     private int wheels;
+    private String model;
+    private Brand brand;
     @JsonIgnore
     @ManyToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "Owner_id", nullable = false)
     private User Owner;
+    @DefaultValue("false")
+    private boolean isRemoved;
+
+    public boolean isIsRemoved() {
+        return isRemoved;
+    }
+
+    public void setIsRemoved(boolean active) {
+        this.isRemoved = active;
+    }
 
     public int getVehicleID() {
         return vehicleID;
@@ -72,6 +88,22 @@ public class Vehicle implements Serializable {
     @JsonIgnore
     public User getOwner() {
         return Owner;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 
     public void setOwner(User owner) {

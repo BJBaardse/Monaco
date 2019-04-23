@@ -37,7 +37,7 @@ public class UserController {
     @Produces(MediaType.APPLICATION_JSON)
     public User UpdateUser(User u) {
         //return u;
-        return userService.UpdateUser(u,1);
+        return userService.UpdateUser(u,user.getId());
     }
 
 }

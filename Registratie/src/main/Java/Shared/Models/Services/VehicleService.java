@@ -29,6 +29,11 @@ public class VehicleService {
         return query.getResultList();
     }
 
+    public List<Vehicle> GetActiveVehicles(User u){
+        TypedQuery<Vehicle> query = em.createNamedQuery("UserVehiclesActive", Vehicle.class).setParameter("owner", u);
+        return query.getResultList();
+    }
+
     public void CreateVehicle(Vehicle vehicle){
 
 
@@ -41,16 +46,8 @@ public class VehicleService {
 
     public boolean RemoveVehicle(int vehicleID,int userID){
         try {
-            Vehicle v = em.find(Vehicle.class, vehicleID);
-            if (v.getOwner().getId() == userID) {
-                em.getTransaction().begin();
 
-                em.remove(v);
-                em.getTransaction().commit();
-                em.flush();
-                return true;
-
-            }
+            em.createNamedQuery("UserVehiclesActive").setParameter("owner", userID).setParameter("vehicleID", vehicleID).executeUpdate();
         }catch (Exception e){
             return false;
         }

@@ -27,9 +27,9 @@ public class VehicleController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-     public List<Vehicle> GetUserVehicle() {
+     public List<Vehicle> GetActiveUserVehicle() {
 
-        return vehicleService.GetVehicles(userService.GetUserID(user.getId()));
+        return vehicleService.GetActiveVehicles(userService.GetUserID(user.getId()));
     }
 
     @Path("Update")
@@ -55,11 +55,8 @@ public class VehicleController {
     @Produces(MediaType.APPLICATION_JSON)
     public Vehicle ADDVehicle(Vehicle vehicle){
         vehicle.setOwner(user);
-        Vehicle v = new Vehicle(vehicle.getLicense(),vehicle.isStolen(),vehicle.getWeight(),vehicle.getWheels(),userService.GetUserID(user.getId()));
-        vehicleService.CreateVehicle(v);
-        return v;
-        //
+        vehicleService.CreateVehicle(vehicle);
+        return vehicle;
 
-        //return vehicleService.GetVehicles(user);
     }
 }
