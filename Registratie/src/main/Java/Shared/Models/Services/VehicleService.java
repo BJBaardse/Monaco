@@ -45,13 +45,8 @@ public class VehicleService {
     }
 
     public boolean RemoveVehicle(int vehicleID,int userID){
-        try {
-
-            em.createNamedQuery("UserVehiclesActive").setParameter("owner", userID).setParameter("vehicleID", vehicleID).executeUpdate();
-        }catch (Exception e){
-            return false;
-        }
-        return false;
+        em.createNamedQuery("UserVehiclesDelete").setParameter("owner", userID).setParameter("vehicleID", vehicleID).executeUpdate();
+        return true;
 
     }
 

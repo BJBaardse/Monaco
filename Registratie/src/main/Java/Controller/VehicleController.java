@@ -32,6 +32,14 @@ public class VehicleController {
         return vehicleService.GetActiveVehicles(userService.GetUserID(user.getId()));
     }
 
+
+    @GET
+    @Path("User")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Vehicle> GetUserVehicle() {
+        return vehicleService.GetVehicles(userService.GetUserID(user.getId()));
+    }
+
     @Path("Update")
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
@@ -40,12 +48,11 @@ public class VehicleController {
         return vehicleService.UpdateVehicle(vehicle, user.getId());
     }
 
-    @Path("remove/{id}")
-    @DELETE
-    @Consumes(MediaType.APPLICATION_JSON)
+    @Path("remove")
+    @PUT
     @Produces(MediaType.APPLICATION_JSON)
-    public boolean  DeleteVehicle(@PathParam("id") int id){
-        //vehicle.setOwner(user);
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public boolean  DeleteVehicle(@FormParam("id")  int id){
         return vehicleService.RemoveVehicle(id, user.getId());
     }
 
