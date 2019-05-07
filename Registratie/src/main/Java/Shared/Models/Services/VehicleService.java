@@ -15,7 +15,7 @@ public class VehicleService {
     @PersistenceContext
     private EntityManager em;
 
-    public List<Vehicle> GetVehicles(){
+    public List<Vehicle> GetAllVehicles(){
         TypedQuery<Vehicle> query = em.createNamedQuery("ALLVehicles", Vehicle.class);
         return query.getResultList();
     }

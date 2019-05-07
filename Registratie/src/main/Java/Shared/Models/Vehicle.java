@@ -38,6 +38,7 @@ public class Vehicle implements Serializable {
     @DefaultValue("false")
     private boolean isRemoved;
 
+
     public boolean isIsRemoved() {
         return isRemoved;
     }

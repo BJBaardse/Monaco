@@ -3,13 +3,17 @@ package Controller;
 import JWT.Authenticated.AuthenticatedUser;
 import JWT.JWT;
 import JWT.Services.UserService;
+import Shared.Models.Role;
 import Shared.Models.Services.VehicleService;
 import Shared.Models.User;
 import Shared.Models.Vehicle;
+import Shared.Models.enums.Brand;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @JWT
@@ -24,7 +28,7 @@ public class VehicleController {
 
     @Inject
     UserService userService;
-
+    @JWT(Permissions = {Role.DEFAULT,Role.USER})
     @GET
     @Produces(MediaType.APPLICATION_JSON)
      public List<Vehicle> GetActiveUserVehicle() {
@@ -32,7 +36,15 @@ public class VehicleController {
         return vehicleService.GetActiveVehicles(userService.GetUserID(user.getId()));
     }
 
+    @JWT(Permissions = {Role.ADMINISTRATION})
+    @Path("all")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Vehicle> GetallVehicles() {
+        return vehicleService.GetAllVehicles();
+    }
 
+    @JWT(Permissions = {Role.DEFAULT,Role.USER, Role.ADMINISTRATION})
     @GET
     @Path("User")
     @Produces(MediaType.APPLICATION_JSON)
@@ -64,6 +76,15 @@ public class VehicleController {
         vehicle.setOwner(user);
         vehicleService.CreateVehicle(vehicle);
         return vehicle;
+
+    }
+
+    @Path("brand")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Brand> Brand(){
+        List<Brand> brand = new ArrayList<>(Arrays.asList(Brand.AUDI,Brand.BMW,Brand.McLaren,Brand.Mercedes,Brand.Porsche));
+        return brand;
 
     }
 }

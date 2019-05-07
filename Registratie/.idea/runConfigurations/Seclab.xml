@@ -16,7 +16,7 @@
         <option name="password" value="powerabusers" />
         <option name="secured" value="true" />
         <option name="stagingRemotePath" value="" />
-        <option name="transportHostId" />
+        <option name="transportHostId" value="" />
         <option name="transportStagingTarget">
           <TransportTarget>
             <option name="id" value="298ce636-81d3-48ad-9580-cba52a13ca09" />
@@ -43,9 +43,7 @@
       <option name="LOCAL" value="false" />
     </RunnerSettings>
     <method>
-      <option name="BuildArtifacts" enabled="true">
-        <artifact name="Registratie:war" />
-      </option>
+      <option name="BuildArtifacts" enabled="false" />
     </method>
   </configuration>
 </component>
