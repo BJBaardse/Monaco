@@ -24,7 +24,7 @@ public class User implements Serializable {
     @Id
     @Access(AccessType.PROPERTY)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private int id; //this is the user id
     private String name;
     private String lastname;
     @Email
