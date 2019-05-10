@@ -21,6 +21,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.SecurityContext;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
+import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Method;
 import java.security.Principal;
 import java.util.Arrays;
@@ -91,6 +92,15 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                         .build());
     }
 
+
+    private void rolecheck(){
+
+    }
+
+    private JWT GetAnnotation(AnnotatedElement annotatedElement){
+        return  annotatedElement.getAnnotation(JWT.class);
+    }
+
     private void validateToken(String token) throws Exception {
         // Check if the token was issued by the server and if it's not expired
         // Throw an Exception if the token is invalid
@@ -101,37 +111,45 @@ public class AuthenticationFilter implements ContainerRequestFilter {
                 .withIssuer("Monaco")
                 .build(); //Reusable verifier instance
         DecodedJWT jwt = verifier.verify(token);
+        JWT JWTContext = null;
 
-        Method method = resourceInfo.getResourceMethod();
-        if( method != null){
-            JWT JWTContext = method.getAnnotation(JWT.class);
+        JWTContext = GetAnnotation(resourceInfo.getResourceMethod());
+        if(JWTContext == null){
+             JWTContext = GetAnnotation(resourceInfo.getResourceClass());
+        }
+
+        if( JWTContext != null){
             Role[] permission =  JWTContext.Permissions();
-            if(!Arrays.asList(permission).contains(Role.DEFAULT)) {
-                String roles = jwt.getClaim("Roles").asString();
 
-                //List<Role> rolelist = Arrays.asList(g.fromJson(roles, Role.class));
+                if (!Arrays.asList(permission).contains(Role.DEFAULT)) {
+                    String roles = jwt.getClaim("Roles").asString();
 
-                boolean check = false;
-                for(Role r : Arrays.asList(permission)){
-                    if(roles.toUpperCase().contains(r.toString().toUpperCase())){
-                        check = true;
+                    //List<Role> rolelist = Arrays.asList(g.fromJson(roles, Role.class));
+
+                    boolean check = false;
+                    for (Role r : Arrays.asList(permission)) {
+                        if (roles.toUpperCase().contains(r.toString().toUpperCase())) {
+                            check = true;
+                        }
+
                     }
-
-                }
-                if(!check){
-                    throw new Exception("no roles");
-                }
+                    if (!check) {
+                        throw new Exception("no roles");
+                    }
 
 //                if (!Arrays.asList(permission).contains(rolelist)) {
 //                    throw new Exception("no roles");
 //
 //                }
 
-            }
+                }
+
             if(JWTContext.Usercheck()) {
                 userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
             }
+
         }
+
 
         //userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
 
