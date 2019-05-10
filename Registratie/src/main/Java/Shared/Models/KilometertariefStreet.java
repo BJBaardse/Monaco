@@ -8,8 +8,11 @@ import java.util.Date;
 public class KilometertariefStreet extends Kilometertarief {
     private String street;
 
+    public KilometertariefStreet() {
 
-    public KilometertariefStreet(String name, int price,String street) {
+    }
+
+    public KilometertariefStreet(String name, int price, String street) {
         super(name, price);
         this.street = street;
     }

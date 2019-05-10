@@ -16,6 +16,9 @@ public class Kilometertarief {
     private Date start;
     private Date expire;
 
+    public Kilometertarief() {
+    }
+
     public Kilometertarief(String name, int price) {
         this.name = name;
         this.price = price;
@@ -39,6 +42,8 @@ public class Kilometertarief {
         this.start = start;
         this.expire = expire;
     }
+
+
 
 
     public int getId() {
