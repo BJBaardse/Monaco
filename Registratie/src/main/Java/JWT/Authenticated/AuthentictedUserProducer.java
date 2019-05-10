@@ -1,7 +1,6 @@
 package JWT.Authenticated;
 
-import JWT.JWT;
-import JWT.Services.UserService;
+import Shared.Models.Services.UserService;
 import Shared.Models.User;
 
 import javax.enterprise.context.RequestScoped;

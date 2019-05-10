@@ -2,7 +2,7 @@ package Controller;
 
 import JWT.Authenticated.AuthenticatedUser;
 import JWT.JWT;
-import JWT.Services.UserService;
+import Shared.Models.Services.UserService;
 import Shared.Models.Role;
 import Shared.Models.Services.VehicleService;
 import Shared.Models.User;

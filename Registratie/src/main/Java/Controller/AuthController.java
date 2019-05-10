@@ -1,7 +1,7 @@
 package Controller;
 
 
-import JWT.Services.UserService;
+import Shared.Models.Services.UserService;
 import Shared.Models.Role;
 import Shared.Models.User;
 import com.auth0.jwt.JWT;
