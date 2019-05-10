@@ -2,11 +2,8 @@ package Controller;
 
 import JWT.Authenticated.AuthenticatedUser;
 import JWT.JWT;
-import Shared.Models.Kilometertarief;
-import Shared.Models.KilometertariefStreet;
-import Shared.Models.Role;
+import Shared.Models.*;
 import Shared.Models.Services.KilometertariefService;
-import Shared.Models.User;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -49,6 +46,16 @@ public class KilometertariefController {
         return kilometertariefService.Add(kilometertarief);
     }
 
+    @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
+    @PUT
+    @Path("enegry")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public boolean Addstreet(KilometertariefEnergy kilometertarief) {
+
+        return kilometertariefService.Add(kilometertarief);
+    }
+
        @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
@@ -64,6 +71,16 @@ public class KilometertariefController {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public boolean Update(KilometertariefStreet kilometertarief) {
+
+        return kilometertariefService.update(kilometertarief);
+    }
+
+    @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
+    @POST
+    @Path("engery")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public boolean Update(KilometertariefEnergy kilometertarief) {
 
         return kilometertariefService.update(kilometertarief);
     }

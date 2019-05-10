@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="kilometertarief endpoint&#10;JWT user check">
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="kilometertarief engery enum">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Registreren.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" afterDir="false" />
@@ -17,7 +17,7 @@
       <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UserController.class" afterDir="false" />
@@ -25,7 +25,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/JWT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -74,14 +74,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="165">
               <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefEnergy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Energy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -137,38 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Services/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#22#1" expanded="true" />
-                <element signature="e#0#22#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/JWT/Authenticated/AuthentictedUserProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="273">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -179,8 +170,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -227,8 +218,10 @@
         <option value="$PROJECT_DIR$/src/main/Java/Controller/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/Java/JWT/JWT.java" />
         <option value="$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Energy.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefEnergy.java" />
+        <option value="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" />
       </list>
     </option>
   </component>
@@ -334,6 +327,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="Java" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Registratie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
               <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,9 +377,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Shared.Models" />
       <recent name="Controller" />
       <recent name="Shared.Models.Services" />
-      <recent name="Shared.Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bartv\OneDrive\fontys\S6\proftaak\Monaco\Registratie\src\main\Java" />
@@ -579,7 +581,7 @@
       <workItem from="1557252258241" duration="76000" />
       <workItem from="1557257036479" duration="1213000" />
       <workItem from="1557349259037" duration="1246000" />
-      <workItem from="1557469092650" duration="12690000" />
+      <workItem from="1557469092650" duration="12980000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -609,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557481430535</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="kilometertarief engery enum">
+      <created>1557486655693</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557486655693</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108883000" />
+    <option name="totallyTimeSpent" value="109173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -639,8 +648,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916147" />
@@ -740,7 +749,8 @@
     <MESSAGE value="added Kilometertarief object&#10;also added kilometertarief street" />
     <MESSAGE value="Kilometertarief jpa fix" />
     <MESSAGE value="kilometertarief endpoint&#10;JWT user check" />
-    <option name="LAST_COMMIT_MESSAGE" value="kilometertarief endpoint&#10;JWT user check" />
+    <MESSAGE value="kilometertarief engery enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="kilometertarief engery enum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -984,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -998,13 +1001,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Energy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="165">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefEnergy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
         </state>
       </provider>
     </entry>
