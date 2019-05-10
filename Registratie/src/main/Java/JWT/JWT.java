@@ -16,5 +16,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Target({TYPE, METHOD})
 public @interface JWT {
     Role[] Permissions() default {};
+    boolean Usercheck() default true;
 }
 

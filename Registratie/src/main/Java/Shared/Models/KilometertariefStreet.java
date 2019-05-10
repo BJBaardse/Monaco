@@ -6,6 +6,7 @@ import java.util.Date;
 
 @Entity
 public class KilometertariefStreet extends Kilometertarief {
+
     private String street;
 
     public KilometertariefStreet() {

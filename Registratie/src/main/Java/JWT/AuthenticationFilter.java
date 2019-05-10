@@ -128,9 +128,12 @@ public class AuthenticationFilter implements ContainerRequestFilter {
 //                }
 
             }
+            if(JWTContext.Usercheck()) {
+                userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
+            }
         }
 
-        userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
+        //userAuthenticatedEvent.fire(jwt.getClaim("ID").asInt());
 
     }
 }

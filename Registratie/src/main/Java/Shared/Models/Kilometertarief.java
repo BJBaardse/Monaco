@@ -1,12 +1,14 @@
 package Shared.Models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-public class Kilometertarief {
+@NamedQueries({
+        @NamedQuery(name = "All", query = "select  k  from Kilometertarief k")
+})
+public class Kilometertarief implements Serializable {
     @Id
     @GeneratedValue
     private int id;

@@ -42,6 +42,7 @@ package Controller;
 
 import Controller.Filter.CorsFilter;
 import JWT.AuthenticationFilter;
+import Shared.Models.Kilometertarief;
 import org.glassfish.jersey.jackson.JacksonFeature;
 
 
@@ -66,6 +67,7 @@ public class ApplicationConfig extends Application {
         resources.add(CorsFilter.class);
         resources.add(JacksonFeature.class);
         resources.add(AuthenticationFilter.class);
+        resources.add(KilometertariefController.class);
 
 
     }
