@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="VerplaatsingsRegistratie:war exploded">
+    <output-path>$PROJECT_DIR$/VerplaatsingsRegistratie/target/0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>VerplaatsingsRegistratie</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="VerplaatsingsRegistratie" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/VerplaatsingsRegistratie/target/0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="VerplaatsingsRegistratie/web/Web" />
+    </root>
+  </artifact>
+</component>
