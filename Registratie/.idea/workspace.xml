@@ -6,16 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="added Kilometertarief object&#10;also added kilometertarief street">
-      <change afterPath="$PROJECT_DIR$/Registreren.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Controller/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/JWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/JWT/JWT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Kilometertarief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Shared/Models/Kilometertarief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java" afterDir="false" />
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="kilometertarief endpoint&#10;JWT user check">
+      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/VehicleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/VehicleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/JWT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Services/UserService.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Kilometertarief.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#33#1" expanded="true" />
@@ -64,36 +74,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/JWT/JWT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,10 +89,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="97" column="65" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="65" />
+            <state relative-caret-position="47">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,6 +127,13 @@
             <state relative-caret-position="125">
               <caret line="130" selection-start-line="130" selection-end-line="130" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Seclab.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-606" />
           </provider>
         </entry>
       </file>
@@ -147,23 +164,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="292">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -215,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/VehicleService.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Controller/VehicleController.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java" />
@@ -224,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/main/Java/JWT/JWT.java" />
         <option value="$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
       </list>
     </option>
   </component>
@@ -364,7 +369,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
@@ -391,7 +396,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.Local">
+  <component name="RunManager" selected="GlassFish Server.Seclab">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -574,7 +579,7 @@
       <workItem from="1557252258241" duration="76000" />
       <workItem from="1557257036479" duration="1213000" />
       <workItem from="1557349259037" duration="1246000" />
-      <workItem from="1557469092650" duration="9043000" />
+      <workItem from="1557469092650" duration="12690000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -597,11 +602,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557475889562</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="kilometertarief endpoint&#10;JWT user check">
+      <created>1557481430535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557481430535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105236000" />
+    <option name="totallyTimeSpent" value="108883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,7 +628,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27986577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -628,17 +640,17 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.398017" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32916147" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32916147" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32916147" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32916147" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -697,11 +709,38 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactor" />
     <MESSAGE value="added Kilometertarief object&#10;also added kilometertarief street" />
     <MESSAGE value="Kilometertarief jpa fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kilometertarief jpa fix" />
+    <MESSAGE value="kilometertarief endpoint&#10;JWT user check" />
+    <option name="LAST_COMMIT_MESSAGE" value="kilometertarief endpoint&#10;JWT user check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,9 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/JWT/Authenticated/AuthenticatedUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -843,16 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="97" column="65" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
@@ -893,17 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Kilometertarief.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#0#33#1" expanded="true" />
@@ -931,20 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#450#451#0" expanded="true" />
@@ -953,10 +962,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Seclab.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="292">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -966,7 +1014,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Registreren:war</last-edited>
+          <last-edited>Registreren:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

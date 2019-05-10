@@ -49,7 +49,7 @@ public class KilometertariefController {
         return kilometertariefService.Add(kilometertarief);
     }
 
-    @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
+       @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
@@ -57,6 +57,17 @@ public class KilometertariefController {
 
         return kilometertariefService.update(kilometertarief);
     }
+
+    @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
+    @POST
+    @Path("street")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public boolean Update(KilometertariefStreet kilometertarief) {
+
+        return kilometertariefService.update(kilometertarief);
+    }
+
 
 
 }
