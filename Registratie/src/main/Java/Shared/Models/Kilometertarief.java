@@ -13,7 +13,7 @@ public class Kilometertarief implements Serializable {
     @GeneratedValue
     private int id;
     private String name;
-    private int price;
+    private Double price;
 
     private Date start;
     private Date expire;
@@ -21,24 +21,24 @@ public class Kilometertarief implements Serializable {
     public Kilometertarief() {
     }
 
-    public Kilometertarief(String name, int price) {
+    public Kilometertarief(String name, double price) {
         this.name = name;
         this.price = price;
     }
 
-    public Kilometertarief(String name, int price, Date start) {
+    public Kilometertarief(String name, double price, Date start) {
         this.name = name;
         this.price = price;
         this.start = start;
     }
 
-    public Kilometertarief(Date expire,String name, int price ) {
+    public Kilometertarief(Date expire,String name, double price ) {
         this.name = name;
         this.price = price;
         this.expire = expire;
     }
 
-    public Kilometertarief(String name, int price, Date start, Date expire) {
+    public Kilometertarief(String name, double price, Date start, Date expire) {
         this.name = name;
         this.price = price;
         this.start = start;
@@ -64,11 +64,11 @@ public class Kilometertarief implements Serializable {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
