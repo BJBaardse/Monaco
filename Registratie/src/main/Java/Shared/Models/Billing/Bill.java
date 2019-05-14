@@ -1,12 +1,13 @@
 package Shared.Models.Billing;
 
-import Shared.Models.Kilometertarief;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "Allbill", query = "select  b  from Bill b")
+})
 public class Bill {
     @Id
     @GeneratedValue
@@ -14,7 +15,7 @@ public class Bill {
 
     private Date date;
     private Double price;
-    private int Killometers;
+    private int Kilometers;
     @OneToMany
     @JoinTable()
     private List<Ride> rides = new ArrayList<>();
@@ -22,10 +23,10 @@ public class Bill {
     public Bill() {
     }
 
-    public Bill(Date date, Double price, int killometers, List<Ride> rides) {
+    public Bill(Date date, int kilometers, List<Ride> rides) {
         this.date = date;
-        this.price = price;
-        Killometers = killometers;
+
+        Kilometers = kilometers;
         this.rides = rides;
     }
 
@@ -39,20 +40,40 @@ public class Bill {
     }
 
     public Double getPrice() {
-        return price;
+//        double price = 0;
+//        for(Ride ride : rides){
+//            price += ride.getPrice();
+//        }
+
+        return this.price;
     }
 
-    public void setPrice(Double price) {
+    public void CalcPrice() {
+        double price = 0;
+        for(Ride ride : rides){
+            price += ride.GetPrices();
+        }
+
         this.price = price;
     }
 
-    public int getKillometers() {
-        return Killometers;
+    public void CalcKilometer(){
+
+        int kilometers = 0;
+
+        for(Ride ride : rides){
+            kilometers += ride.getKilometers();
+        }
+
+        this.Kilometers = kilometers;
+
     }
 
-    public void setKillometers(int killometers) {
-        Killometers = killometers;
+
+    public int getKilometers() {
+        return Kilometers;
     }
+
 
     public List<Ride> getRides() {
         return rides;
