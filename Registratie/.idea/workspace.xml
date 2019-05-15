@@ -6,9 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="pom.xml test jenkins">
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="pom.xml test jenkins2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Testing/BillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/BillTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Testing/KilometertariefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/KilometertariefTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,7 +87,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Testing/BillTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Testing/BillTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
@@ -98,7 +99,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/Testing/KilometertariefTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Testing/KilometertariefTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="953">
               <caret line="84" column="59" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
@@ -109,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="230" selection-start-line="230" selection-end-line="230" />
+            <state relative-caret-position="225">
+              <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -542,7 +543,7 @@
       <workItem from="1557817821865" duration="14366000" />
       <workItem from="1557846458948" duration="3392000" />
       <workItem from="1557852351146" duration="54000" />
-      <workItem from="1557922536383" duration="1934000" />
+      <workItem from="1557922536383" duration="2438000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -628,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557925007335</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pom.xml test jenkins2">
+      <created>1557925515856</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557925515856</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -664,7 +672,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132858000" />
+    <option name="totallyTimeSpent" value="133362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,7 +686,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29597315" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29597315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -689,7 +697,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -813,7 +821,8 @@
     <MESSAGE value="unit test bill and kilometertarief" />
     <MESSAGE value="pom.xml test" />
     <MESSAGE value="pom.xml test jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml test jenkins" />
+    <MESSAGE value="pom.xml test jenkins2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml test jenkins2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,7 +1167,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Testing/BillTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Testing/BillTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
@@ -1207,7 +1216,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Testing/KilometertariefTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Testing/KilometertariefTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="953">
           <caret line="84" column="59" selection-start-line="84" selection-start-column="59" selection-end-line="84" selection-end-column="59" />
@@ -1216,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="225">
+          <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
         </state>
       </provider>
     </entry>
