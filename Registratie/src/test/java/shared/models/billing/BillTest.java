@@ -1,8 +1,8 @@
 package shared.models.billing;
 
-import shared.models.services.BillService;
 import org.junit.Before;
 import org.junit.Test;
+import shared.models.services.BillService;
 
 import java.util.List;
 

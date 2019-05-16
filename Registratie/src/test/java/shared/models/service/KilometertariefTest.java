@@ -1,4 +1,4 @@
-package shared.models;
+package shared.models.service;
 
 
 import org.junit.Before;
@@ -8,6 +8,7 @@ import shared.models.Kilometertarief;
 import shared.models.KilometertariefEnergy;
 import shared.models.KilometertariefStreet;
 import shared.models.services.KilometertariefService;
+
 
 import java.util.List;
 
