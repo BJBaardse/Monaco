@@ -6,77 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="pom.xml test refactor">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Registreren_war_exploded2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Registreren.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Registreren.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing/BillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing/KilometertariefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shared/models/billing/KilometertariefTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/BillController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/Filter/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/Filter/CorsFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/KilometertariefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/KilometertariefController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/Authenticated/AuthenticatedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/jwt/authenticated/AuthenticatedUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/Authenticated/AuthentictedUserProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/jwt/authenticated/AuthentictedUserProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/jwt/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/Credentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/jwt/Credentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/JWT/JWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/jwt/JWT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Billing/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/billing/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Billing/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/billing/Movement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Billing/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/billing/Ride.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Kilometertarief.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/Kilometertarief.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefEnergy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/KilometertariefEnergy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/KilometertariefStreet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/services/BillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/services/KilometertariefService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/services/VehicleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/enums/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Energy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Java/shared/models/enums/Energy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/Filter/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/Filter/CorsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Controller/VehicleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthenticatedUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthenticatedUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/Credentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/JWT/JWT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Services/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Services/VehicleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/enums/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Registreren/WEB-INF/classes/Shared/Models/enums/Brand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/ApplicationConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/AuthController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/AuthController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/Filter/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/Filter/CorsFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/VehicleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/VehicleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthenticatedUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthenticatedUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/Authenticated/AuthentictedUserProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/AuthenticationFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/Credentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/Credentials.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JWT/JWT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JWT/JWT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/Services/VehicleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/Services/VehicleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Shared/Models/enums/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shared/Models/enums/Brand.class" afterDir="false" />
-    </list>
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="Project refactor to java standards for testing" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -625,16 +555,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KilometertariefTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KilometertariefTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Registreren" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="shared.models.billing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="shared.models.billing" />
-      <option name="MAIN_CLASS_NAME" value="shared.models.billing.KilometertariefTest" />
+      <option name="PACKAGE_NAME" value="java.shared.models.billing" />
+      <option name="MAIN_CLASS_NAME" value="java.shared.models.billing.KilometertariefTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -643,8 +567,14 @@
     </configuration>
     <configuration name="KilometertariefTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Registreren" />
-      <option name="PACKAGE_NAME" value="java.shared.models.billing" />
-      <option name="MAIN_CLASS_NAME" value="java.shared.models.billing.KilometertariefTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shared.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shared.models" />
+      <option name="MAIN_CLASS_NAME" value="shared.models.KilometertariefTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -742,7 +672,7 @@
       <workItem from="1557846458948" duration="3392000" />
       <workItem from="1557852351146" duration="54000" />
       <workItem from="1557922536383" duration="8143000" />
-      <workItem from="1557992748241" duration="1567000" />
+      <workItem from="1557992748241" duration="2064000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -842,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557925978524</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Project refactor to java standards for testing">
+      <created>1557994537261</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557994537262</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -878,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140634000" />
+    <option name="totallyTimeSpent" value="141131000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -891,7 +828,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="EJB" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3" />
@@ -930,7 +866,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" weight="0.3295302" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.3295302" />
-      <window_info anchor="right" id="Maven" order="12" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.3295302" />
       <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3295302" />
     </layout>
     <layout-to-restore>
@@ -1031,7 +967,8 @@
     <MESSAGE value="pom.xml test jenkins" />
     <MESSAGE value="pom.xml test jenkins2" />
     <MESSAGE value="pom.xml test refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml test refactor" />
+    <MESSAGE value="Project refactor to java standards for testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project refactor to java standards for testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1434,8 +1371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

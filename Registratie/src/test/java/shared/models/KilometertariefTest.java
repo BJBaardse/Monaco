@@ -1,4 +1,4 @@
-package shared.models.billing;
+package shared.models;
 
 
 import org.junit.Before;
