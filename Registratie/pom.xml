@@ -106,7 +106,7 @@
       <!--<version>2.2.6</version>-->
     <!--</dependency>-->
 
-    <!--&lt;!&ndash; JWT dependency &ndash;&gt;-->
+    <!--&lt;!&ndash; jwt dependency &ndash;&gt;-->
     <!--<dependency>-->
       <!--<groupId>io.jsonwebtoken</groupId>-->
       <!--<artifactId>jjwt</artifactId>-->
@@ -171,7 +171,7 @@
       <version>2.28</version>
     </dependency>
 
-  <!--JWT lib-->
+  <!--jwt lib-->
     <dependency>
       <groupId>com.auth0</groupId>
       <artifactId>java-jwt</artifactId>
