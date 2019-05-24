@@ -27,4 +27,19 @@ public class BillService {
 
 
 
+
+    public List<Bill> GetUserID(int id){
+        List<Bill> bills = em.createNamedQuery("Userbills", Bill.class).setParameter("ID",id).getResultList();
+
+        for(Bill bill : bills){
+            bill.CalcPrice();
+            bill.CalcKilometer();
+        }
+        return  bills; //em.createNamedQuery("Allbill", Bill.class).getResultList();
+    }
+
+
+
+
+
 }

@@ -1,12 +1,17 @@
 package shared.models.billing;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import shared.models.User;
+import shared.models.Vehicle;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Allbill", query = "select  b  from Bill b")
+        @NamedQuery(name = "Allbill", query = "select  b  from Bill b"),
+        @NamedQuery(name = "Userbills", query = "select  b  from Bill b where user.id = :ID ")
 })
 public class Bill {
     @Id
@@ -19,6 +24,13 @@ public class Bill {
     @OneToMany
     @JoinTable()
     private List<Ride> rides = new ArrayList<>();
+
+    @ManyToOne
+    private Vehicle vehicle;
+
+    @ManyToOne( fetch = FetchType.EAGER)
+    @JoinColumn(name = "bill_id", nullable = false)
+    private User user;
 
     public Bill() {
     }
@@ -81,5 +93,21 @@ public class Bill {
 
     public void setRides(List<Ride> rides) {
         this.rides = rides;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+    @JsonIgnore
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
