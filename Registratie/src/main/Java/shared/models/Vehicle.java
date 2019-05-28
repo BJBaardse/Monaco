@@ -3,6 +3,7 @@ package shared.models;
 import shared.models.enums.Brand;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import shared.models.enums.Energy;
 
 import javax.persistence.*;
 import javax.ws.rs.DefaultValue;
@@ -38,6 +39,16 @@ public class Vehicle implements Serializable {
     @DefaultValue("false")
     private boolean isRemoved;
 
+
+    private Energy energy;
+
+    public Energy getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(Energy energy) {
+        this.energy = energy;
+    }
 
     public boolean isIsRemoved() {
         return isRemoved;

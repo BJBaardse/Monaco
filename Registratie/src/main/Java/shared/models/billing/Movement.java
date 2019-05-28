@@ -19,7 +19,19 @@ public class Movement {
     @ManyToOne
     private Kilometertarief additionTarief;
 
+    public Movement() {
+    }
 
+    public Movement(String street, int kilometers) {
+        this.street = street;
+        this.kilometers = kilometers;
+    }
+
+    public Movement(String street, int kilometers, Kilometertarief baseTarief) {
+        this.street = street;
+        this.kilometers = kilometers;
+        BaseTarief = baseTarief;
+    }
 
     public String getStreet() {
         return street;

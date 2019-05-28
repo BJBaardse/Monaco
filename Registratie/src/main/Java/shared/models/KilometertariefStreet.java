@@ -2,9 +2,16 @@ package shared.models;
 
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import java.util.Date;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "AllStreet", query = "select  k  from KilometertariefStreet k "),
+        @NamedQuery(name = "GetStreet", query = "select  k  from KilometertariefStreet k where k.street = :street"),
+
+})
 public class KilometertariefStreet extends Kilometertarief {
 
     private String street;
