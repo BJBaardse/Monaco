@@ -42,6 +42,12 @@ public class Bill {
         this.rides = rides;
     }
 
+    public Bill(Date date, List<Ride> rides, Vehicle vehicle, User user) {
+        this.date = date;
+        this.rides = rides;
+        this.vehicle = vehicle;
+        this.user = user;
+    }
 
     public Date getDate() {
         return date;
@@ -60,7 +66,33 @@ public class Bill {
         return this.price;
     }
 
-    public void CalcPrice() {
+
+    public void CalcData(){
+        CalcPrice();
+        CalcKilometers();
+    }
+
+    public void CalcPrice(){
+        double price = 0;
+        for(Ride ride : rides){
+            price += ride.getPrice();
+        }
+
+        this.price = price;
+    }
+    public void CalcKilometers(){
+
+        int kilometers = 0;
+
+        for(Ride ride : rides){
+            kilometers += ride.getKilometers();
+        }
+
+        this.Kilometers = kilometers;
+
+    }
+
+    public void CalcPrices() {
         double price = 0;
         for(Ride ride : rides){
             price += ride.GetPrices();

@@ -2,15 +2,14 @@ package shared.models.billing;
 
 import shared.models.Kilometertarief;
 import shared.models.KilometertariefEnergy;
-import shared.models.KilometertariefStreet;
 import shared.models.Vehicle;
+import shared.models.enums.Energy;
 import shared.models.movements.Imovement;
 import shared.models.movements.Irit;
 import shared.models.services.KilometertariefService;
 import shared.models.services.VehicleService;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -26,11 +25,10 @@ public class BillLogic {
 
     }
 
-    private List<Kilometertarief> GetbaseTarief(int ID){
+    private List<Kilometertarief> GetbaseTarief(Energy energy){
 
-        Vehicle vehicle = vehicleService.GetVehicles(ID);
         List<Kilometertarief> kilometertariefs = new ArrayList<>();
-        kilometertariefs.addAll(kilometertariefService.GetEngeryLabel(vehicle.getEnergy()));
+        kilometertariefs.addAll(kilometertariefService.GetEngeryLabel(energy));
 
         return kilometertariefs;
 
@@ -50,11 +48,32 @@ public class BillLogic {
     }
 
 
-    private List<Movement> CalculateRides(Irit rit, int autoID){
+    private Bill CalculateBill(List<Irit> rits, Vehicle vehicle){
+
+
+
+        List<Ride> rides = new ArrayList<>();
+        for(Irit rit : rits){
+            rides.add(CalculateRide(rit,vehicle));
+        }
+
+        Date time = new Date(System.currentTimeMillis());
+        Bill bill = new Bill(time,rides,vehicle,vehicle.getOwner());
+
+        bill.CalcKilometer();
+        bill.CalcPrices();
+        bill.CalcData();
+
+
+        return bill;
+    }
+
+    // calculateRides with kilometertarief to get a total prices
+    private Ride CalculateRide(Irit rit, Vehicle vehicle){
 
         List<Movement> movements = new ArrayList<>();
 
-        List<Kilometertarief> basetariefs = GetbaseTarief(autoID);
+        List<Kilometertarief> basetariefs = GetbaseTarief(vehicle.getEnergy());
 
         KilometertariefEnergy basetarief = (KilometertariefEnergy) GetLatest(basetariefs, rit.GetDate());
 
@@ -65,9 +84,11 @@ public class BillLogic {
             movements.add(movement);
         }
 
+        Ride ride = new Ride(rit.GetDate());
+        ride.setMovements(movements);
+        ride.CalcData();
 
-
-        return movements;
+        return ride;
 
     }
 

@@ -15,8 +15,15 @@ public class Ride {
     private List<Movement> movements = new ArrayList<>();
 
     private Double price;
+    private int Kilometers;
 
 
+    public Ride() {
+    }
+
+    public Ride(Date date) {
+        this.date = date;
+    }
 
     public double getPrice(){
 
@@ -41,11 +48,49 @@ public class Ride {
         return price;
     }
 
+    public int getKilometers() {
+        return Kilometers;
+    }
+
+    public void CalcData(){
+        CalcPrice();
+        CalcKilometers();
+    }
+
+    public void CalcPrice(){
+            double price = 0;
+
+            for( Movement movement : movements){
+                double baseprice = movement.getBaseTarief().getPrice();
+                if(movement.getAdditionTarief() != null) {
+                    double Additionprice = movement.getAdditionTarief().getPrice();
+
+                    price += baseprice * (Additionprice / 100 + 1) * movement.getKilometers();
+                } else {
+                    price += baseprice * movement.getKilometers();
+                }
+
+            }
+            this.price = price;
+    }
+
+    public void CalcKilometers(){
+
+        int kilometers = 0;
+
+        for(Movement movement : movements){
+            kilometers += movement.getKilometers();
+        }
+        this.Kilometers = kilometers;
+
+    }
+
     public Date getDate() {
         return date;
     }
 
     public void setDate(Date date) {
+
         this.date = date;
     }
 
@@ -62,7 +107,7 @@ public class Ride {
         movements.add(movement);
     }
 
-    public int getKilometers(){
+    public int getKilometersCalc(){
         int kilometers = 0;
 
         for(Movement movement : movements){

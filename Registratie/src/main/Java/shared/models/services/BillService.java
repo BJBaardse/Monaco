@@ -19,7 +19,7 @@ public class BillService {
         List<Bill> bills = em.createNamedQuery("Allbill", Bill.class).getResultList();
 
         for(Bill bill : bills){
-            bill.CalcPrice();
+            bill.CalcPrices();
             bill.CalcKilometer();
         }
         return  bills; //em.createNamedQuery("Allbill", Bill.class).getResultList();
@@ -32,7 +32,7 @@ public class BillService {
         List<Bill> bills = em.createNamedQuery("Userbills", Bill.class).setParameter("ID",id).getResultList();
 
         for(Bill bill : bills){
-            bill.CalcPrice();
+            bill.CalcPrices();
             bill.CalcKilometer();
         }
         return  bills; //em.createNamedQuery("Allbill", Bill.class).getResultList();
