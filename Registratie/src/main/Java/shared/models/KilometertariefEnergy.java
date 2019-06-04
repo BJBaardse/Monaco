@@ -3,15 +3,16 @@ package shared.models;
 
 import shared.models.enums.Energy;
 
-import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "GetEnergy", query = "select  k  from KilometertariefEnergy k where  k.energy = :energy")
+        @NamedQuery(name = "GetEnergy", query = "select  k  from KilometertariefEnergy k where  k.energy = :energy"),
+        @NamedQuery(name = "GetEnergyall", query = "select  k  from KilometertariefEnergy k")
 })
+@Table(name = "KilometertariefEnergy")
+@PrimaryKeyJoinColumn(name = "Kilometertarief")
 public class KilometertariefEnergy extends Kilometertarief {
 
     private Energy energy;

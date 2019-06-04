@@ -9,14 +9,16 @@ import shared.models.movements.Irit;
 import shared.models.services.KilometertariefService;
 import shared.models.services.VehicleService;
 
+import javax.ejb.Stateless;
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+@Stateless
 public class BillLogic {
-
+    @Inject
     private KilometertariefService kilometertariefService;
-
+    @Inject
     private VehicleService vehicleService;
 
 
@@ -28,6 +30,9 @@ public class BillLogic {
     private List<Kilometertarief> GetbaseTarief(Energy energy){
 
         List<Kilometertarief> kilometertariefs = new ArrayList<>();
+        //kilometertariefs.add((Kilometertarief) kilometertariefService.GetAll());
+
+        List<KilometertariefEnergy> kilometertariefEnergy = kilometertariefService.GetEngeryLabel(energy);
         kilometertariefs.addAll(kilometertariefService.GetEngeryLabel(energy));
 
         return kilometertariefs;
@@ -48,9 +53,7 @@ public class BillLogic {
     }
 
 
-    private Bill CalculateBill(List<Irit> rits, Vehicle vehicle){
-
-
+    public Bill CalculateBill(List<Irit> rits, Vehicle vehicle){
 
         List<Ride> rides = new ArrayList<>();
         for(Irit rit : rits){
@@ -99,7 +102,9 @@ public class BillLogic {
         Kilometertarief kilometertarief = null;
         //Check latest kilometertarief based on date
         for(Kilometertarief k : kilometertariefs){
-            if(k.getStart().after(date) && k.getExpire().before(date)){
+
+            boolean b = k.getStart().after(date);
+            if(k.getStart().before(date) && k.getExpire().after(date)){
 
                 //Check between old select kilometertarief
                 if( kilometertarief != null){

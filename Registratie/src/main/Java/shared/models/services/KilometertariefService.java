@@ -8,6 +8,7 @@ import shared.models.enums.Energy;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
@@ -37,8 +38,20 @@ public class KilometertariefService {
 
 
     public List<KilometertariefEnergy> GetEngeryLabel(Energy energy){
+        //return em.createNamedQuery("GetEnergy",KilometertariefEnergy.class).setParameter("energy",energy).getResultList();
+        List<Kilometertarief> kilometertariefs = em.createNamedQuery("All", Kilometertarief.class).getResultList();
 
-        return em.createNamedQuery("GetEnergy",KilometertariefEnergy.class).setParameter("energy",energy).getResultList();
+        List<KilometertariefEnergy> kilometertariefEnergies = new ArrayList<>();
+        for (Kilometertarief k : kilometertariefs){
+            if(k instanceof  KilometertariefEnergy){
+                if(((KilometertariefEnergy) k).getEnergy() == energy){
+                    kilometertariefEnergies.add((KilometertariefEnergy) k);
+                }
+            }
+        }
+
+
+        return kilometertariefEnergies;
     }
 
     public List<KilometertariefStreet> GetAllStreet(){

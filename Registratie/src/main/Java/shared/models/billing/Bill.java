@@ -29,7 +29,7 @@ public class Bill {
     private Vehicle vehicle;
 
     @ManyToOne( fetch = FetchType.EAGER)
-    @JoinColumn(name = "bill_id", nullable = false)
+    @JoinColumn(name = "bills", nullable = false)
     private User user;
 
     public Bill() {
@@ -68,6 +68,9 @@ public class Bill {
 
 
     public void CalcData(){
+        for(Ride r : rides){
+            r.CalcData();
+        }
         CalcPrice();
         CalcKilometers();
     }
@@ -75,7 +78,7 @@ public class Bill {
     public void CalcPrice(){
         double price = 0;
         for(Ride ride : rides){
-            price += ride.getPrice();
+            price =+ ride.getPrice();
         }
 
         this.price = price;
@@ -85,7 +88,7 @@ public class Bill {
         int kilometers = 0;
 
         for(Ride ride : rides){
-            kilometers += ride.getKilometers();
+            kilometers =+ ride.getKilometers();
         }
 
         this.Kilometers = kilometers;
@@ -106,7 +109,7 @@ public class Bill {
         int kilometers = 0;
 
         for(Ride ride : rides){
-            kilometers += ride.getKilometers();
+            kilometers = kilometers + ride.getKilometers();
         }
 
         this.Kilometers = kilometers;

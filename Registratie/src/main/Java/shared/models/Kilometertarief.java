@@ -8,6 +8,7 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(name = "All", query = "select  k  from Kilometertarief k")
 })
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Kilometertarief implements Serializable {
     @Id
     @GeneratedValue

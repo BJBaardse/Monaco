@@ -1,9 +1,7 @@
 package shared.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -12,6 +10,9 @@ import java.util.Date;
         @NamedQuery(name = "GetStreet", query = "select  k  from KilometertariefStreet k where k.street = :street"),
 
 })
+
+@Table(name = "KilometertariefStreet")
+@PrimaryKeyJoinColumn(name = "Kilometertarief")
 public class KilometertariefStreet extends Kilometertarief {
 
     private String street;
