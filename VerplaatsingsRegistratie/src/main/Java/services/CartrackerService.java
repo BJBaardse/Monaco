@@ -6,6 +6,7 @@ import models.Cartracker;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+
 public class CartrackerService {
 
     @PersistenceContext
