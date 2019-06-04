@@ -1,4 +1,5 @@
-package Endpoints;
+package Controllers;
+
 
 public class Endpoints {
 }
