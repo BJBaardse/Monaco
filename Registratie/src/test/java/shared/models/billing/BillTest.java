@@ -26,6 +26,9 @@ public class BillTest {
     public void Getallbills() {
 
         List<Bill> bills = this.billService.GetAll();
+
+        BillLogictest billLogic = new BillLogictest();
+
         assertNotNull(bills);
 
 
