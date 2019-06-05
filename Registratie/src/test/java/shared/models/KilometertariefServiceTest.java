@@ -1,11 +1,10 @@
-package shared.models.services;
+package shared.models;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Matchers;
-import shared.models.Kilometertarief;
-import shared.models.KilometertariefEnergy;
-import shared.models.KilometertariefStreet;
+
+import shared.models.services.KilometertariefService;
 
 import java.util.List;
 
