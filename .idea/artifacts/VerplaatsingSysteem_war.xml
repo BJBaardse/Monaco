@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="VerplaatsingSysteem:war">
+    <output-path>$PROJECT_DIR$/VerplaatsingSysteem/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>VerplaatsingSysteem</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="VerplaatsingSysteem.war">
+      <element id="artifact" artifact-name="VerplaatsingSysteem:war exploded" />
+    </root>
+  </artifact>
+</component>

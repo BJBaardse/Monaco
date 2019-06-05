@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="VerplaatsingsRegistratie" />
+        <module name="VerplaatsingSysteem" />
         <module name="SimulatieSysteem" />
       </profile>
     </annotationProcessing>
@@ -14,6 +14,7 @@
       <module name="0" target="1.5" />
       <module name="SimulatieSysteem" target="1.7" />
       <module name="VerplaatsingsRegistratie" target="1.5" />
+      <module name="VerplaatsingSysteem" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
