@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="bill temp objects">
-      <change afterPath="$PROJECT_DIR$/src/test/java/shared/models/services/VehicleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/shared/models/service/KilometertariefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shared/models/services/KilometertariefTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="test update" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -328,24 +323,6 @@
               <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
               <item name="Registratie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="billing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Registratie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="movements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Registratie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -396,7 +373,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="dynamic.classpath" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/shared/models" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../phpstorm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -699,7 +679,7 @@
       <workItem from="1559379825284" duration="357000" />
       <workItem from="1559635383185" duration="13621000" />
       <workItem from="1559725044337" duration="3911000" />
-      <workItem from="1559736356198" duration="1059000" />
+      <workItem from="1559736356198" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -855,7 +835,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559648429642</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test update">
+      <created>1559738259668</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1559738259668</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -891,7 +878,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179316000" />
+    <option name="totallyTimeSpent" value="179567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1050,7 +1037,8 @@
     <MESSAGE value="Bill logic added bill calculation to generate bill from interfaces" />
     <MESSAGE value="Bill logci bug fixes&#10;bill logic endpoint working with mock data" />
     <MESSAGE value="bill temp objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="bill temp objects" />
+    <MESSAGE value="test update" />
+    <option name="LAST_COMMIT_MESSAGE" value="test update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

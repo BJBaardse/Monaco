@@ -1,6 +1,5 @@
 package shared.models.services;
 
-
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Matchers;
@@ -8,14 +7,12 @@ import shared.models.Kilometertarief;
 import shared.models.KilometertariefEnergy;
 import shared.models.KilometertariefStreet;
 
-
 import java.util.List;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-public class KilometertariefTest {
-
+public class KilometertariefServiceTest {
 
     KilometertariefService kilometertariefService;
 
@@ -87,7 +84,5 @@ public class KilometertariefTest {
         verify(this.kilometertariefService).update(expected);
         assertTrue(actual);
     }
-
-
 
 }
