@@ -1,14 +1,13 @@
 package controllers;
 
-import com.google.gson.Gson;
+
+import com.google.gson.*;
 import models.Cartracker;
 import services.CartrackerService;
 
 import javax.ejb.EJB;
-import javax.ws.rs.BeanParam;
-import javax.ws.rs.FormParam;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 
 @Path("/Cartracker")
 public class CartrackerController {
@@ -17,10 +16,14 @@ public class CartrackerController {
     private CartrackerService cartrackerService;
 
     @POST
-    public void saveCartracker(@FormParam("cartracker") String cartracker){
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void saveCartracker(String cartracker){
+        Cartracker cartracker1 = new Cartracker();
+        System.out.println(cartracker);
         Gson g = new Gson();
-        Cartracker ct = g.fromJson(cartracker, Cartracker.class);
-        System.out.println("in save cartracker." + ct.toString());
+        JsonObject jsonObject = g.fromJson(cartracker, JsonObject.class);
+        Cartracker ct = g.fromJson(jsonObject.getAsJsonObject("cartracker"), Cartracker.class);
+        System.out.println(ct.toString());
         // cartrackerService.save(cartracker);
     }
 }

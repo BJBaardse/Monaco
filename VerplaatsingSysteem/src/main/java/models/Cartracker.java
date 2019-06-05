@@ -3,7 +3,7 @@ package models;
 import java.util.ArrayList;
 
 public class Cartracker {
-    private ArrayList movements;
+    private ArrayList<Movements> movements;
     private double totalDistance;
     private double totalDuration;
     private String beginTime;
@@ -45,7 +45,7 @@ public class Cartracker {
         return movements;
     }
 
-    public void setMovements(ArrayList movements) {
+    public void setMovements(ArrayList<Movements> movements) {
         this.movements = movements;
     }
 
@@ -53,11 +53,22 @@ public class Cartracker {
 
     }
 
-    public Cartracker(ArrayList movements, double totalDistance, double totalDuration, String begintime, String endtime){
+    public Cartracker(String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
         setMovements(movements);
         setTotalDistance(totalDistance);
         setTotalDuration(totalDuration);
-        setBeginTime(begintime);
-        setEndTime(endtime);
+        setBeginTime(beginTime);
+        setEndTime(endTime);
+    }
+
+    @Override
+    public String toString() {
+        return "Cartracker{" +
+                "movements=" + movements +
+                ", totalDistance=" + totalDistance +
+                ", totalDuration=" + totalDuration +
+                ", beginTime='" + beginTime + '\'' +
+                ", endTime='" + endTime + '\'' +
+                '}';
     }
 }

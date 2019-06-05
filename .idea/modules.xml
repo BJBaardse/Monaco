@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Monaco.iml" filepath="$PROJECT_DIR$/Monaco.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SimulatieSysteem/SimulatieSysteem.iml" filepath="$PROJECT_DIR$/SimulatieSysteem/SimulatieSysteem.iml" />
       <module fileurl="file://$PROJECT_DIR$/VerplaatsingSysteem/VerplaatsingSysteem.iml" filepath="$PROJECT_DIR$/VerplaatsingSysteem/VerplaatsingSysteem.iml" />
     </modules>
   </component>
