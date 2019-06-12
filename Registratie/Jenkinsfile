@@ -7,7 +7,7 @@ pipeline {
                	sh "mvn compile -f Registratie/"
             }
         }
-        stage('Sonarqube') {
+     /*   stage('Sonarqube') {
             environment {
                 scannerHome = tool 'SonarQubeScanner'
             }
@@ -22,6 +22,7 @@ pipeline {
         }
     }
 	}
+	*/
         stage('Deploy'){
             steps{
                 sh 'cp target/Registreren.war Registreren.war'
