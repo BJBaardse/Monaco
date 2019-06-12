@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps { 
 		sh "pwd"    
-               	sh "mvn compile -f Registratie/"
+               	sh "mvn clean package -f Registratie/"
             }
         }
      /*   stage('Sonarqube') {
