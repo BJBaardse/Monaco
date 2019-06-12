@@ -4,10 +4,10 @@ pipeline {
         stage('Build') { 
             steps { 
 		sh "pwd"    
-               	sh "mvn compile -f Registratie/"
+               	sh "mvn clean package -f Registratie/"
             }
         }
-       /* stage('Sonarqube') {
+     /*   stage('Sonarqube') {
             environment {
                 scannerHome = tool 'SonarQubeScanner'
             }
@@ -22,9 +22,10 @@ pipeline {
         }
     }
 	}
+	*/
         stage('Deploy'){
             steps{
-                sh 'cp target/Registreren.war Registreren.war'
+                sh 'cp Registratie/target/Registreren.war Registreren.war'
                 sshPublisher(publishers:[sshPublisherDesc(configName:'testrig', transfers:[sshTransfer(cleanRemote: false, excludes: '', execCommand: '/home/student/payara/payara5/bin/asadmin --passwordfile password.properties --host localhost --user admin deploy --force Registreren.war', execTimeout: 12000000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'Helloworld.war')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
        
             }
