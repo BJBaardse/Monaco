@@ -20,11 +20,11 @@ public class BillTest {
 
     BillService billService;
 
-    BillLogic billLogic;
+    private BillLogic billLogic;
 
     @Before
     public void setUp() {
-        //this.kilometertariefService = new StockService(); // Tested class, so don't mock it.
+
         this.billService = mock(BillService.class);
         this.billLogic = new BillLogic();
 
@@ -36,7 +36,6 @@ public class BillTest {
 
         List<Bill> bills = this.billService.GetAll();
 
-        BillLogictest billLogic = new BillLogictest();
 
         assertNotNull(bills);
 
