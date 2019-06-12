@@ -2,21 +2,27 @@ package shared.models.services;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Matchers;
+import org.powermock.modules.junit4.PowerMockRunner;
 import shared.models.User;
 
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.verify;
+import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.when;
 
+@RunWith(PowerMockRunner.class)
 public class VehicleTest {
 
-    UserService userService;
+    private UserService userService;
 
     @Before
     public void setUp() {
         this.userService = mock(UserService.class);
+
     }
 
     @Test
