@@ -3,7 +3,8 @@ pipeline {
     stages { 
         stage('Build') { 
             steps { 
-               sh "mvn compile -f /Registratie"
+		sh "pwd"    
+               	sh "mvn compile -f Registratie/"
             }
         }
         stage('Sonarqube') {
