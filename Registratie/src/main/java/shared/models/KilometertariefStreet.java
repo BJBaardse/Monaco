@@ -3,6 +3,7 @@ package shared.models;
 
 import javax.persistence.*;
 import java.util.Date;
+import shared.models.Kilometertarief;
 
 @Entity
 @NamedQueries({
