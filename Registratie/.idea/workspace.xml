@@ -7,39 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/BillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Filter/CorsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/KilometertariefController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/VehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwt/AuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwt/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwt/JWT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwt/authenticated/AuthenticatedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwt/authenticated/AuthentictedUserProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/IUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/Kilometertarief.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/KilometertariefEnergy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/billing/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/billing/BillLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/billing/Movement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/enums/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/movements/Imovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/movements/Irit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/movements/move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/movements/rit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/services/BillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/services/KilometertariefService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shared/models/services/VehicleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shared/models/KilometertariefStreet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shared/models/KilometertariefStreet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,10 +29,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillLogictest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+            <state relative-caret-position="-707">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,23 +51,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/KilometertariefService.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="194">
+              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/services/KilometertariefServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -130,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/KilometertariefEnergy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
@@ -140,6 +100,15 @@
                 <element signature="e#0#65#1" expanded="true" />
                 <element signature="e#0#39#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -197,6 +166,7 @@
       <find>json</find>
       <find>gson</find>
       <find>not</find>
+      <find>BillLogictest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/KilometertariefStreet.java" />
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/Services/KilometertariefService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/Java/Shared/Models/enums/Energy.java" />
@@ -252,10 +221,11 @@
         <option value="$PROJECT_DIR$/src/test/java/shared/models/services/KilometertariefServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/shared/models/billing/BillLogic.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/shared/models/billing/BillLogictest.java" />
         <option value="$PROJECT_DIR$/src/main/java/shared/models/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/main/java/shared/models/KilometertariefStreet.java" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
+        <option value="$PROJECT_DIR$/src/test/java/shared/models/billing/BillLogictest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java" />
       </list>
     </option>
   </component>
@@ -338,7 +308,20 @@
               <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
               <item name="Registratie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Registratie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Registratie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Registratie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -347,6 +330,9 @@
               <item name="Registratie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="billing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,14 +365,13 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\github\Monaco\Registratie\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="shared.models.services" />
       <recent name="shared.models" />
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\proftaak\Monaco\Registratie\src\main\Java" />
-      <recent name="C:\Users\bartv\OneDrive\fontys\S6\proftaak\Monaco\Registratie\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -394,8 +379,9 @@
       <recent name="Shared.Models" />
       <recent name="Controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\github\Monaco\Registratie\src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\proftaak\Monaco\Registratie\src\main\Java" />
+      <recent name="C:\Users\bartv\OneDrive\fontys\S6\proftaak\Monaco\Registratie\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -712,7 +698,7 @@
       <workItem from="1559736356198" duration="5724000" />
       <workItem from="1559894162255" duration="27000" />
       <workItem from="1559900489113" duration="2616000" />
-      <workItem from="1560335606073" duration="1701000" />
+      <workItem from="1560335606073" duration="3265000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -924,7 +910,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559742150280</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="refactor">
+      <created>1560344214800</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1560344214800</updated>
+    </task>
+    <task id="LOCAL-00032" summary="refactor">
+      <created>1560345488586</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1560345488586</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -960,7 +960,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188325000" />
+    <option name="totallyTimeSpent" value="189889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -973,6 +973,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35033557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -986,7 +987,7 @@
       <window_info id="EJB" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18413597" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18413597" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -997,7 +998,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="13" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1248,13 +1249,6 @@
     <SUITE FILE_PATH="coverage/Registratie$KilometertariefTest.ic" NAME="KilometertariefTest Coverage Results" MODIFIED="1557851938963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0/javaee-api-8.0.jar!/javax/persistence/EntityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="65" column="40" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/Filter/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1565,16 +1559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" selection-start-line="22" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/services/VehicleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1613,16 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="101" column="87" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillLogictest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1682,6 +1656,34 @@
             <element signature="imports" expanded="true" />
             <element signature="e#0#65#1" expanded="true" />
             <element signature="e#0#39#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillLogictest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-707">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/shared/models/billing/BillTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
