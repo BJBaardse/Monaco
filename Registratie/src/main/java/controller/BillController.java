@@ -73,13 +73,13 @@ public class BillController {
 
         move move1 = new move();
         move1.setStreet("beta");
-        move1.setDate(new Date());
+        move1.setDuration((double) new Date().getTime());
         move1.setDistance(200);
         imovements.add(move1);
 
         move move2 = new move();
         move2.setStreet("fastlane");
-        move2.setDate(new Date());
+        move2.setDuration((double) new Date().getTime());
         move2.setDistance(186);
         imovements.add(move2);
 

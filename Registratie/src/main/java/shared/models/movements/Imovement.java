@@ -3,7 +3,8 @@ package shared.models.movements;
 import java.util.Date;
 
 public interface Imovement {
-    int GetDistance();
+    Double GetDistance();
     String GetStreet();
-    Date getDate();
+    Double getDuration();
+
 }

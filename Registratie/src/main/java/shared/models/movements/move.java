@@ -4,12 +4,14 @@ import java.util.Date;
 
 public class move implements Imovement {
 
-    private int distance;
+    private Double distance;
     private String street;
     private Date date;
 
+    private Double duration;
+
     @Override
-    public int GetDistance() {
+    public Double GetDistance() {
         return distance;
     }
 
@@ -19,12 +21,20 @@ public class move implements Imovement {
     }
 
     @Override
+    public Double getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Double duration) {
+        this.duration = duration;
+    }
+
     public Date getDate() {
         return date;
     }
 
 
-    public void setDistance(int distance) {
+    public void setDistance(double distance) {
         this.distance = distance;
     }
 

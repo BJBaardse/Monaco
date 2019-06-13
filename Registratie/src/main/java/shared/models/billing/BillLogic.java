@@ -12,6 +12,7 @@ import shared.models.services.VehicleService;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 @Stateless
@@ -82,9 +83,15 @@ public class BillLogic {
         KilometertariefEnergy basetarief = (KilometertariefEnergy) GetLatest(basetariefs, rit.GetDate());
 
 
+        Calendar time = Calendar.getInstance();
+        time.setTimeInMillis(rit.GetDate().getTime());
+        //Data from move interface
         for(Imovement m : rit.getMovements()){
-            Movement movement = new Movement(m.GetStreet(),m.GetDistance(),basetarief);
-            movement.setAdditionTarief(GetStreets(m.GetStreet(),m.getDate()));
+            //Convert duration to time Date
+            time.setTimeInMillis(time.getTimeInMillis() + m.getDuration().longValue());
+            //Convert movement interface to Movement object for billing
+            Movement movement = new Movement(m.GetStreet(),m.GetDistance().intValue(),basetarief);
+            movement.setAdditionTarief(GetStreets(m.GetStreet(),time.getTime()));
             movements.add(movement);
         }
 
