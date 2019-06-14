@@ -1,9 +1,10 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Cartracker {
-    private int id;
+    private int cartrackerID;
     private ArrayList<Movements> movements;
     private double totalDistance;
     private double totalDuration;
@@ -56,9 +57,9 @@ public class Cartracker {
 
     }
 
-    public Cartracker(int id, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
+    public Cartracker(int cartrackerID, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
         setMovements(movements);
-        setId(id);
+        setCartrackerID(cartrackerID);
         setTotalDistance(totalDistance);
         setTotalDuration(totalDuration);
         setBeginTime(beginTime);
@@ -68,7 +69,7 @@ public class Cartracker {
     @Override
     public String toString() {
         return "Cartracker{" +
-                "id=" + id +
+                "cartrackerID=" + cartrackerID +
                 ", movements=" + movements +
                 ", totalDistance=" + totalDistance +
                 ", totalDuration=" + totalDuration +
@@ -94,26 +95,13 @@ public class Cartracker {
     public void setEndDateTime(Date endDateTime) {
         this.endDateTime = endDateTime;
     }
-    public Date convertStringToDate(String datumTijd){
-        String[] splitted = datumTijd.split(" ");
-        String[] datumSplit = splitted[0].split("-");
-        String[] tijdSplit = splitted[1].split(":");
 
-        Date convertedString = new Date();
-        convertedString.setDay(datumSplit[0]);
-        convertedString.setMonth(datumSplit[1]);
-        convertedString.setYear(datumSplit[2]);
-        convertedString.setHour(tijdSplit[0]);
-        convertedString.setMinute(tijdSplit[1]);
 
-        return convertedString;
+    public int getCartrackerID() {
+        return cartrackerID;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setCartrackerID(int cartrackerID) {
+        this.cartrackerID = cartrackerID;
     }
 }
