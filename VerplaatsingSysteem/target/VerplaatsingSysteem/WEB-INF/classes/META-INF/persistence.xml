@@ -6,7 +6,7 @@
              version="2.1">
     <persistence-unit name="EuropeesRekeningRijdenPool" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>java:comp/DefaultDataSource</jta-data-source>
+        <jta-data-source>verplaatsing</jta-data-source>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update" />

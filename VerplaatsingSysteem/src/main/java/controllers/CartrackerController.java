@@ -6,13 +6,14 @@ import models.Cartracker;
 import services.CartrackerService;
 
 import javax.ejb.EJB;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 @Path("/Cartracker")
 public class CartrackerController {
 
-    @EJB
+    @Inject
     private CartrackerService cartrackerService;
 
     @POST
@@ -24,6 +25,6 @@ public class CartrackerController {
         JsonObject jsonObject = g.fromJson(cartracker, JsonObject.class);
         Cartracker ct = g.fromJson(jsonObject.getAsJsonObject("cartracker"), Cartracker.class);
         System.out.println(ct.toString());
-        // cartrackerService.save(cartracker);
+        cartrackerService.save(ct);
     }
 }

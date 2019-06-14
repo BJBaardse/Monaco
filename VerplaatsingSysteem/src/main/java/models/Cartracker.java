@@ -1,9 +1,17 @@
 package models;
 
+import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
+@Entity
 public class Cartracker {
-    private ArrayList<Movements> movements;
+    @Id
+    @GeneratedValue
+    private int ID;
+    @OneToMany( fetch = FetchType.EAGER)
+    @JoinTable
+    private List<Movements> movements = new ArrayList<>();
     private double totalDistance;
     private double totalDuration;
     private String beginTime;
@@ -41,7 +49,7 @@ public class Cartracker {
         this.totalDistance = totalDistance;
     }
 
-    public ArrayList getMovements() {
+    public List<Movements> getMovements() {
         return movements;
     }
 
