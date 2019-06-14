@@ -39,8 +39,19 @@ public class Vehicle implements Serializable {
     @DefaultValue("false")
     private boolean isRemoved;
 
+    private int cartrackerID;
+
+    public int getCartrackerID() {
+        return cartrackerID;
+    }
+
+    public void setCartrackerID(int cartrackerID) {
+        this.cartrackerID = cartrackerID;
+    }
 
     private Energy energy;
+
+
 
     public Energy getEnergy() {
         return energy;

@@ -68,6 +68,7 @@ public class ApplicationConfig extends Application {
         resources.add(AuthenticationFilter.class);
         resources.add(KilometertariefController.class);
         resources.add(BillController.class);
+        resources.add(StatusController.class);
 
 
     }

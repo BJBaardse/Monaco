@@ -2,6 +2,8 @@ package shared.models.services;
 
 
 import shared.models.billing.Bill;
+import shared.models.billing.Movement;
+import shared.models.billing.Ride;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -39,6 +41,26 @@ public class BillService {
         }
         return  bills; //em.createNamedQuery("Allbill", Bill.class).getResultList();
     }
+
+
+    public Bill saveBill(Bill bill){
+    em.getTransaction().begin();
+        for(Ride r : bill.getRides()){
+
+            for(Movement m : r.getMovements()){
+                em.persist(m);
+            }
+            em.persist(r);
+        }
+
+        em.persist(bill);
+
+        em.getTransaction().commit();
+
+        return bill;
+    }
+
+
 
 
 
