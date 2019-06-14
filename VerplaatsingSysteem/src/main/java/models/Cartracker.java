@@ -12,10 +12,13 @@ public class Cartracker {
     @OneToMany( fetch = FetchType.EAGER)
     @JoinTable
     private List<Movements> movements = new ArrayList<>();
+    private int id;
     private double totalDistance;
     private double totalDuration;
     private String beginTime;
     private String endTime;
+    private Date beginDateTime;
+    private Date endDateTime;
 
     public String getEndTime() {
         return endTime;
@@ -61,8 +64,9 @@ public class Cartracker {
 
     }
 
-    public Cartracker(String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
+    public Cartracker(int id, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
         setMovements(movements);
+        setId(id);
         setTotalDistance(totalDistance);
         setTotalDuration(totalDuration);
         setBeginTime(beginTime);
@@ -72,11 +76,52 @@ public class Cartracker {
     @Override
     public String toString() {
         return "Cartracker{" +
-                "movements=" + movements +
+                "id=" + id +
+                ", movements=" + movements +
                 ", totalDistance=" + totalDistance +
                 ", totalDuration=" + totalDuration +
                 ", beginTime='" + beginTime + '\'' +
                 ", endTime='" + endTime + '\'' +
+                ", beginDateTime=" + beginDateTime +
+                ", endDateTime=" + endDateTime +
                 '}';
+    }
+
+    public Date getBeginDateTime() {
+        return beginDateTime;
+    }
+
+    public void setBeginDateTime(Date beginDateTime) {
+        this.beginDateTime = beginDateTime;
+    }
+
+    public Date getEndDateTime() {
+        return endDateTime;
+    }
+
+    public void setEndDateTime(Date endDateTime) {
+        this.endDateTime = endDateTime;
+    }
+    public Date convertStringToDate(String datumTijd){
+        String[] splitted = datumTijd.split(" ");
+        String[] datumSplit = splitted[0].split("-");
+        String[] tijdSplit = splitted[1].split(":");
+
+        Date convertedString = new Date();
+        convertedString.setDay(datumSplit[0]);
+        convertedString.setMonth(datumSplit[1]);
+        convertedString.setYear(datumSplit[2]);
+        convertedString.setHour(tijdSplit[0]);
+        convertedString.setMinute(tijdSplit[1]);
+
+        return convertedString;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
