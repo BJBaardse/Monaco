@@ -4,7 +4,7 @@ import java.util.Date;
 
 public interface Imovement {
     Double GetDistance();
-    String GetStreet();
+    String GetStreetName();
     Double getDuration();
 
 }

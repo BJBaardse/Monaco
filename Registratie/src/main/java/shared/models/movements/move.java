@@ -16,7 +16,7 @@ public class move implements Imovement {
     }
 
     @Override
-    public String GetStreet() {
+    public String GetStreetName() {
         return street;
     }
 

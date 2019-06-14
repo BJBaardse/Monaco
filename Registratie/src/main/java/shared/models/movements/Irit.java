@@ -6,5 +6,5 @@ import java.util.List;
 public interface Irit {
 
     List<Imovement> getMovements();
-    Date GetDate();
+    Date GetBeginDateTime();
 }

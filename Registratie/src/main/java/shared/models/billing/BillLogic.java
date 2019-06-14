@@ -80,22 +80,22 @@ public class BillLogic {
 
         List<Kilometertarief> basetariefs = GetbaseTarief(vehicle.getEnergy());
 
-        KilometertariefEnergy basetarief = (KilometertariefEnergy) GetLatest(basetariefs, rit.GetDate());
+        KilometertariefEnergy basetarief = (KilometertariefEnergy) GetLatest(basetariefs, rit.GetBeginDateTime());
 
 
         Calendar time = Calendar.getInstance();
-        time.setTimeInMillis(rit.GetDate().getTime());
+        time.setTimeInMillis(rit.GetBeginDateTime().getTime());
         //Data from move interface
         for(Imovement m : rit.getMovements()){
             //Convert duration to time Date
             time.setTimeInMillis(time.getTimeInMillis() + m.getDuration().longValue());
             //Convert movement interface to Movement object for billing
-            Movement movement = new Movement(m.GetStreet(),m.GetDistance().intValue(),basetarief);
-            movement.setAdditionTarief(GetStreets(m.GetStreet(),time.getTime()));
+            Movement movement = new Movement(m.GetStreetName(),m.GetDistance().intValue(),basetarief);
+            movement.setAdditionTarief(GetStreets(m.GetStreetName(),time.getTime()));
             movements.add(movement);
         }
 
-        Ride ride = new Ride(rit.GetDate());
+        Ride ride = new Ride(rit.GetBeginDateTime());
         ride.setMovements(movements);
         ride.CalcData();
 

@@ -17,7 +17,7 @@ public class rit implements Irit {
     }
 
     @Override
-    public Date GetDate() {
+    public Date GetBeginDateTime() {
         return date;
     }
 
