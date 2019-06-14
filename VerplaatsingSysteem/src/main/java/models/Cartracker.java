@@ -1,11 +1,20 @@
 package models;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+@Entity
 public class Cartracker {
     private int cartrackerID;
-    private ArrayList<Movements> movements;
+    @Id
+    @GeneratedValue
+    private int ID;
+    @OneToMany( fetch = FetchType.EAGER)
+    @JoinTable
+    private List<Movements> movements = new ArrayList<>();
+    private int id;
     private double totalDistance;
     private double totalDuration;
     private String beginTime;
@@ -45,7 +54,7 @@ public class Cartracker {
         this.totalDistance = totalDistance;
     }
 
-    public ArrayList getMovements() {
+    public List<Movements> getMovements() {
         return movements;
     }
 
@@ -57,8 +66,9 @@ public class Cartracker {
 
     }
 
-    public Cartracker(int cartrackerID, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
+    public Cartracker(int cartrackerID,int id, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
         setMovements(movements);
+        setId(id);
         setCartrackerID(cartrackerID);
         setTotalDistance(totalDistance);
         setTotalDuration(totalDuration);
@@ -69,7 +79,7 @@ public class Cartracker {
     @Override
     public String toString() {
         return "Cartracker{" +
-                "cartrackerID=" + cartrackerID +
+                "id=" + id +
                 ", movements=" + movements +
                 ", totalDistance=" + totalDistance +
                 ", totalDuration=" + totalDuration +
@@ -97,6 +107,13 @@ public class Cartracker {
     }
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public int getCartrackerID() {
         return cartrackerID;
     }

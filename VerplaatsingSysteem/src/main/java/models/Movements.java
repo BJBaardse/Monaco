@@ -1,6 +1,15 @@
 package models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Movements {
+    @Id
+    @GeneratedValue()
+    private int ID;
     private String streetName;
     private double distance;
     private double duration;

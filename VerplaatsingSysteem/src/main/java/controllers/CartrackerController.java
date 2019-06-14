@@ -6,6 +6,7 @@ import models.Cartracker;
 import services.CartrackerService;
 
 import javax.ejb.EJB;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.text.ParseException;
@@ -15,7 +16,7 @@ import java.util.Date;
 @Path("/Cartracker")
 public class CartrackerController {
 
-    @EJB
+    @Inject
     private CartrackerService cartrackerService;
 
     @POST
@@ -31,6 +32,6 @@ public class CartrackerController {
         ct.setBeginDateTime(dateBegin);
         ct.setEndDateTime(dateEnd);
         System.out.println(ct.toString());
-        // cartrackerService.save(ct);
+        cartrackerService.save(ct);
     }
 }
