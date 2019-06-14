@@ -8,6 +8,8 @@ public class Cartracker {
     private double totalDuration;
     private String beginTime;
     private String endTime;
+    private Date beginDateTime;
+    private Date endDateTime;
 
     public String getEndTime() {
         return endTime;
@@ -70,5 +72,35 @@ public class Cartracker {
                 ", beginTime='" + beginTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 '}';
+    }
+
+    public Date getBeginDateTime() {
+        return beginDateTime;
+    }
+
+    public void setBeginDateTime(Date beginDateTime) {
+        this.beginDateTime = beginDateTime;
+    }
+
+    public Date getEndDateTime() {
+        return endDateTime;
+    }
+
+    public void setEndDateTime(Date endDateTime) {
+        this.endDateTime = endDateTime;
+    }
+    public Date convertStringToDate(String datumTijd){
+        String[] splitted = datumTijd.split(" ");
+        String[] datumSplit = splitted[0].split("-");
+        String[] tijdSplit = splitted[1].split(":");
+
+        Date convertedString = new Date();
+        convertedString.setDay(datumSplit[0]);
+        convertedString.setMonth(datumSplit[1]);
+        convertedString.setYear(datumSplit[2]);
+        convertedString.setHour(tijdSplit[0]);
+        convertedString.setMinute(tijdSplit[1]);
+
+        return convertedString;
     }
 }
