@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="VerplaatsingSysteemEJB:war" />
+      <artifact name="VerplaatsingSysteem:war" />
     </artifacts-to-build>
   </component>
   <component name="AutomaticModuleUnloader">
@@ -13,34 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a753da4b-4000-4fec-ab9e-161242cd67b7" name="Default" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/VerplaatsingSysteemEJB_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/VerplaatsingSysteemEJB_war_exploded2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/VerplaatsingSysteem_ejb_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/VerplaatsingSysteem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/VerplaatsingSysteem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem.war" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/controllers/CartrackerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/controllers/CartrackerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/models/Cartracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/models/Cartracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/models/Movements.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/models/Movements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/services/CartrackerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/VerplaatsingSysteem/WEB-INF/classes/services/CartrackerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/controllers/CartrackerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/controllers/CartrackerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/models/Cartracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/models/Cartracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/models/Movements.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/models/Movements.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/services/CartrackerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/target/classes/services/CartrackerService.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" afterDir="false" />
->>>>>>> VerplaatsingsRegistratie
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/SimulatieSysteem/target/" />
@@ -60,13 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="442">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="38" />
-=======
             <state relative-caret-position="18">
               <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
->>>>>>> VerplaatsingsRegistratie
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,73 +43,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/beans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
-=======
         <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Date.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
@@ -149,19 +50,12 @@
               <folding>
                 <element signature="e#694#695#0" expanded="true" />
                 <element signature="e#721#722#0" expanded="true" />
->>>>>>> VerplaatsingsRegistratie
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-=======
         <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -180,32 +74,10 @@
                 <element signature="e#2847#2848#0" expanded="true" />
                 <element signature="e#2875#2876#0" expanded="true" />
               </folding>
->>>>>>> VerplaatsingsRegistratie
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-=======
->>>>>>> VerplaatsingsRegistratie
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -243,17 +115,6 @@
         <option value="$PROJECT_DIR$/VerplaatsingsRegistratie/pom.xml" />
         <option value="$PROJECT_DIR$/VerplaatsingsRegistratie/src/main/webapp.html" />
         <option value="$PROJECT_DIR$/VerplaatsingsRegistratie/src/main/webapp/WEB-INF/web.xml" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/pom.xml" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/CartrackerService.java" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" />
-        <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java" />
-=======
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java" />
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/pom.xml" />
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java" />
@@ -261,7 +122,6 @@
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java" />
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java" />
->>>>>>> VerplaatsingsRegistratie
       </list>
     </option>
   </component>
@@ -283,31 +143,14 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="VerplaatsingSysteem Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="VerplaatsingSysteem Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="VerplaatsingSysteem Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="408" />
-    <option name="y" value="121" />
-    <option name="width" value="1943" />
-    <option name="height" value="1103" />
+    <option name="x" value="175" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -319,56 +162,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteemEJB_war" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
               <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
               <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
               <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
               <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
+              <item name="Monaco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Monaco" type="462c0819:PsiDirectoryNode" />
               <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -399,64 +224,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MonacoVerplaatsing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MonacoVerplaatsing" type="462c0819:PsiDirectoryNode" />
-              <item name="VerplaatsingSysteem" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -477,25 +244,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="dynamic.classpath" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF" />
-=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> VerplaatsingsRegistratie
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3599034" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\bartv\github\MonacoVerplaatsing\VerplaatsingSysteem\src\main\resources\META-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Semester 6\Proftaak\Monaco\VerplaatsingSysteem\src\main\resources" />
       <recent name="D:\Semester 6\Proftaak\Monaco\VerplaatsingsRegistratie\src\main" />
@@ -514,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.191.0">
+  <component name="RunManager" selected="GlassFish Server.VerplaatsingSysteem">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -525,56 +284,6 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GlassFish 5.191.0" type="GlassfishConfiguration" factoryName="Remote" APPLICATION_SERVER_NAME="GlassFish 5.191.0" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="HOST" value="192.168.25.110" />
-      <option name="LOCAL" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://192.168.25.110:8080/VerplaatsingSysteemEJB_war/" />
-      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
-      <deployment>
-        <artifact name="VerplaatsingSysteemEJB:war">
-          <settings />
-        </artifact>
-      </deployment>
-      <server-settings>
-        <data>
-          <option name="adminServerHost" value="" />
-          <option name="clusterName" value="" />
-          <option name="credentialAlias" value="fd13ca9f-db13-414f-99ad-d91bf12931dd" />
-          <option name="secured" value="true" />
-          <option name="stagingRemotePath" value="" />
-          <option name="transportHostId" />
-          <option name="transportStagingTarget">
-            <TransportTarget>
-              <option name="id" value="c3583b55-73e6-44c9-9bbc-0ecc549693e9" />
-              <id>c3583b55-73e6-44c9-9bbc-0ecc549693e9</id>
-            </TransportTarget>
-          </option>
-          <credential-alias>fd13ca9f-db13-414f-99ad-d91bf12931dd</credential-alias>
-          <secured>true</secured>
-          <admin-server-host />
-          <cluster-name />
-          <transport-target>
-            <TransportTarget>
-              <option name="id" value="c3583b55-73e6-44c9-9bbc-0ecc549693e9" />
-              <id>c3583b55-73e6-44c9-9bbc-0ecc549693e9</id>
-            </TransportTarget>
-          </transport-target>
-          <staging-path />
-        </data>
-      </server-settings>
-      <predefined_log_file enabled="true" id="GlassFish" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="65222" />
-        <option name="LOCAL" value="false" />
-      </RunnerSettings>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="VerplaatsingSysteemEJB:war" />
-        </option>
       </method>
     </configuration>
     <configuration name="MonacoSimulatie" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.184.0" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="1.8">
@@ -826,7 +535,6 @@
       <item itemvalue="GlassFish Server.MonacoSimulatie" />
       <item itemvalue="GlassFish Server.VerplaatsingsRegistratie" />
       <item itemvalue="GlassFish Server.VerplaatsingSysteem" />
-      <item itemvalue="GlassFish Server.GlassFish 5.191.0" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -850,11 +558,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="28267000" />
-=======
     <option name="totallyTimeSpent" value="27684000" />
->>>>>>> VerplaatsingsRegistratie
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -869,27 +573,18 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info id="EJB" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.2590604" />
-=======
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978903" visible="true" weight="0.24295302" />
->>>>>>> VerplaatsingsRegistratie
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Persistence" order="2" sideWeight="0.5021097" side_tool="true" weight="0.23288591" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.5028329" side_tool="true" weight="0.2590604" />
+      <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" x="121" y="424" width="724" height="381" id="Run" order="2" sideWeight="0.4919463" type="WINDOWED" visible="true" weight="0.3286119" />
-=======
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4919463" weight="0.3286119" />
->>>>>>> VerplaatsingsRegistratie
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -900,13 +595,8 @@
       <window_info anchor="bottom" id="Application Servers" order="10" sideWeight="0.4936034" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49573562" weight="0.32934782" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-=======
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
->>>>>>> VerplaatsingsRegistratie
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -919,11 +609,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Maven" order="12" visible="true" weight="0.3295302" />
-=======
       <window_info anchor="right" id="Maven" order="12" weight="0.3295302" />
->>>>>>> VerplaatsingsRegistratie
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -968,43 +654,6 @@
     <entry file="file://$PROJECT_DIR$/VerplaatsingsRegistratie/src/main/Java/services/CartrackerService.java" />
     <entry file="file://$PROJECT_DIR$/VerplaatsingsRegistratie/src/main/Java/Controllers/CartrackerController.java" />
     <entry file="file://$PROJECT_DIR$/VerplaatsingsRegistratie/src/main/webapp/WEB-INF/web.xml" />
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/CartrackerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="27" />
-=======
     <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1016,30 +665,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
->>>>>>> VerplaatsingsRegistratie
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/resources/META-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Movements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1070,7 +701,6 @@
         <state relative-caret-position="629">
           <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
->>>>>>> VerplaatsingsRegistratie
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#195#196#0" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -1087,14 +717,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java">
+    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="442">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
         <state relative-caret-position="204">
           <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
@@ -1112,22 +736,14 @@
           <folding>
             <element signature="e#694#695#0" expanded="true" />
             <element signature="e#721#722#0" expanded="true" />
->>>>>>> VerplaatsingsRegistratie
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/services/CartrackerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-=======
     <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
->>>>>>> VerplaatsingsRegistratie
           <folding>
             <element signature="e#1898#1899#0" expanded="true" />
             <element signature="e#1934#1935#0" expanded="true" />
@@ -1145,17 +761,10 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/models/Cartracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-=======
     <entry file="file://$PROJECT_DIR$/VerplaatsingSysteem/src/main/java/controllers/CartrackerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
->>>>>>> VerplaatsingsRegistratie
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1168,12 +777,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>VerplaatsingSysteem:ejb exploded</last-edited>
+          <last-edited>VerplaatsingSysteem:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.3599034" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1240,7 +848,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Maven: com.google.code.gson:gson:2.8.5</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
