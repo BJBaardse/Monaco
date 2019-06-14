@@ -6,6 +6,9 @@ import models.Movements;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.Date;
+import java.util.List;
+
 @Stateless
 public class CartrackerService {
 
@@ -19,5 +22,10 @@ public class CartrackerService {
             entityManager.persist(m);
         }
         entityManager.merge(cartracker);
+    }
+
+    public List<Cartracker> GetCartracker(int ID, Date date){
+
+        return entityManager.createNamedQuery("GetRide",Cartracker.class).setParameter("ID",ID).setParameter("date",date).getResultList();
     }
 }

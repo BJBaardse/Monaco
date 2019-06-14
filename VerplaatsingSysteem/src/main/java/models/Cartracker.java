@@ -6,6 +6,10 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@NamedQueries({
+
+        @NamedQuery(name = "GetRide", query = "select  c  from Cartracker c where c.cartrackerID = :ID AND MONTH(c.beginDateTime) = :date AND YEAR(c.beginDateTime) = :date")
+})
 public class Cartracker {
     private int cartrackerID;
     @Id
@@ -14,7 +18,6 @@ public class Cartracker {
     @OneToMany( fetch = FetchType.EAGER)
     @JoinTable
     private List<Movements> movements = new ArrayList<>();
-    private int id;
     private double totalDistance;
     private double totalDuration;
     private String beginTime;
@@ -68,7 +71,6 @@ public class Cartracker {
 
     public Cartracker(int cartrackerID,int id, String beginTime, String endTime, ArrayList<Movements> movements, double totalDistance, double totalDuration){
         setMovements(movements);
-        setId(id);
         setCartrackerID(cartrackerID);
         setTotalDistance(totalDistance);
         setTotalDuration(totalDuration);
@@ -79,7 +81,6 @@ public class Cartracker {
     @Override
     public String toString() {
         return "Cartracker{" +
-                "id=" + id +
                 ", movements=" + movements +
                 ", totalDistance=" + totalDistance +
                 ", totalDuration=" + totalDuration +
@@ -106,14 +107,6 @@ public class Cartracker {
         this.endDateTime = endDateTime;
     }
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
     public int getCartrackerID() {
         return cartrackerID;
     }

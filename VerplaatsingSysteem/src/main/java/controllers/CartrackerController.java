@@ -2,6 +2,7 @@ package controllers;
 
 
 import com.google.gson.*;
+import com.sun.xml.bind.v2.model.core.ID;
 import models.Cartracker;
 import services.CartrackerService;
 
@@ -12,6 +13,7 @@ import javax.ws.rs.core.MediaType;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Path("/Cartracker")
 public class CartrackerController {
@@ -33,5 +35,12 @@ public class CartrackerController {
         ct.setEndDateTime(dateEnd);
         System.out.println(ct.toString());
         cartrackerService.save(ct);
+    }
+
+    @GET
+    @Path("/{ID}/{date}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Cartracker> Getartracker(@PathParam("ID") int ID,  @PathParam("date") Date date){
+        return cartrackerService.GetCartracker(ID,date);
     }
 }
