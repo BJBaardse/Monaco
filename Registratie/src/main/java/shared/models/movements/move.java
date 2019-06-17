@@ -34,15 +34,24 @@ public class move implements Imovement {
     }*/
 
 
-    public void setDistance(double distance) {
-        this.distance = distance;
-    }
-
-    public void setStreet(String street) {
-        this.streetName = street;
-    }
 
     /*public void setDate(Date date) {
         this.date = date;
     }*/
+
+    public Double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Double distance) {
+        this.distance = distance;
+    }
+
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
 }
