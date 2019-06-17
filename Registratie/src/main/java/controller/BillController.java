@@ -143,11 +143,11 @@ public class BillController {
 
         Vehicle vehicleobj = vehicleService.GetVehicles(1);
 
-        HttpResponse<JsonNode> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
+        HttpResponse<String> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
                 .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
                 .routeParam("date", new Date().toString())
-                .asJson();
-        return jsonResponse.getBody().toString();
+                .asString();
+        return jsonResponse.getBody();
 
     }
 }
