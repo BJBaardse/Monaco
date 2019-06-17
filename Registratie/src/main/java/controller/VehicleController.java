@@ -44,6 +44,15 @@ public class VehicleController {
         return vehicleService.GetAllVehicles();
     }
 
+    @JWT(Permissions = {Role.ADMINISTRATION})
+    @Path("license")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public List<Vehicle> GetallVehicles( @FormParam("license")String license) {
+        return vehicleService.GetVehiclesLicense(license);
+    }
+
     @JWT(Permissions = {Role.DEFAULT,Role.USER, Role.ADMINISTRATION})
     @GET
     @Path("User")

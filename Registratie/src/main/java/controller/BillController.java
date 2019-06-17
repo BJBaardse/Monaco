@@ -141,20 +141,20 @@ public class BillController {
 
     }
 
-
-    @GET
-    @Path("generate2")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<rit> Generateshit() throws IOException, UnirestException {
-
-
-            Vehicle vehicleobj = vehicleService.GetVehicles(1);
-
-            Calendar calendar = Calendar.getInstance();
-            calendar.setTime(new Date());
-
-            return Createbill(vehicleobj,calendar.getTimeInMillis());
-
-
-    }
+//
+//    @GET
+//    @Path("generate2")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public List<rit> Generateshit() throws IOException, UnirestException {
+//
+//
+//            Vehicle vehicleobj = vehicleService.GetVehicles(1);
+//
+//            Calendar calendar = Calendar.getInstance();
+//            calendar.setTime(new Date());
+//
+//            return Createbill(vehicleobj,calendar.getTimeInMillis());
+//
+//
+//    }
 }

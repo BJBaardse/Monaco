@@ -24,6 +24,11 @@ public class VehicleService {
         return em.createNamedQuery("VehicleID", Vehicle.class).setParameter("ID", ID).getSingleResult();
     }
 
+
+    public List<Vehicle> GetVehiclesLicense(String vehicle){
+        return em.createNamedQuery("VehicleLicense", Vehicle.class).setParameter("license", vehicle).getResultList();
+    }
+
     public List<Vehicle> GetVehicles(User u){
         TypedQuery<Vehicle> query = em.createNamedQuery("UserVehicles", Vehicle.class).setParameter("owner", u);
         return query.getResultList();

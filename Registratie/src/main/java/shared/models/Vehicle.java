@@ -17,7 +17,9 @@ import java.io.Serializable;
         @NamedQuery(name = "VehicleID", query = "select  v  from Vehicle v where v.id = :ID"),
         @NamedQuery(name = "UserVehicles", query = "select  v  from Vehicle v where v.Owner = :owner"),
         @NamedQuery(name = "UserVehiclesActive", query = "select  v  from Vehicle v where v.Owner = :owner and v.isRemoved = false "),
-        @NamedQuery(name = "UserVehiclesDelete", query = "update Vehicle set isRemoved = true where Owner.id = :owner and vehicleID = :vehicleID")
+        @NamedQuery(name = "UserVehiclesDelete", query = "update Vehicle set isRemoved = true where Owner.id = :owner and vehicleID = :vehicleID"),
+        @NamedQuery(name = "VehicleLicense", query = "select  v  from Vehicle v where v.license = :license")
+
 })
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Vehicle implements Serializable {
