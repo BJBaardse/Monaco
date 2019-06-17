@@ -3,6 +3,7 @@ package controller;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -27,6 +28,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -122,20 +124,29 @@ public class BillController {
                 .asJson();
 
 
+        try {
 
-        System.out.println(jsonResponse.getBody());
-        List<Irit> rides = new ArrayList<>();
-        jsonResponse.getBody().getArray();
-        for(Object s : jsonResponse.getBody().getArray()){
-            rides.add(gson.fromJson(jsonResponse.getBody().toString(),Irit.class));
+            System.out.println(jsonResponse.getBody());
+            List<Irit> rides = new ArrayList<>();
+
+            Type listType = new TypeToken<List<Irit>>() {
+            }.getType();
+
+            rides.addAll(gson.fromJson(jsonResponse.getBody().toString(), listType));
+            
+            return rides;
+
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+            throw e;
         }
-
 
 
 //        Bill bill = billLogic.CalculateBill(rides,vehicle);
 //
 //        billService.saveBill(bill);
-        return rides;
+
     }
 
 
@@ -150,13 +161,13 @@ public class BillController {
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(new Date());
 
-            HttpResponse<String> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
+            HttpResponse<JsonNode> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
                     .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
                     .routeParam("date", String.valueOf(calendar.getTimeInMillis()))
-                    .asString();
+                    .asJson();
 
 
-           return jsonResponse.getBody();
+           return jsonResponse.getBody().getArray().toString();
         }catch (Exception e){
             e.printStackTrace();
 
