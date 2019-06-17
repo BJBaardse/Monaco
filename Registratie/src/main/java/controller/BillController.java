@@ -139,15 +139,20 @@ public class BillController {
     @POST
     @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
-    public String Generateshit() throws IOException, UnirestException {
+    public String Generateshit() throws  UnirestException {
+        try {
 
-        Vehicle vehicleobj = vehicleService.GetVehicles(1);
+            Vehicle vehicleobj = vehicleService.GetVehicles(1);
 
-        HttpResponse<String> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
-                .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
-                .routeParam("date", new Date().toString())
-                .asString();
-        return jsonResponse.getBody();
+            HttpResponse<String> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
+                    .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
+                    .routeParam("date", new Date().toString())
+                    .asString();
+            return jsonResponse.getBody();
+        }catch (Exception e){
+            e.printStackTrace();
 
+            return "shit not working check logs:   " + e.toString();
+        }
     }
 }

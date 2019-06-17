@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+            <state relative-caret-position="125">
+              <caret line="139" column="20" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -737,7 +737,7 @@
       <workItem from="1559900489113" duration="2616000" />
       <workItem from="1560335606073" duration="21523000" />
       <workItem from="1560686508051" duration="28000" />
-      <workItem from="1560756930360" duration="3682000" />
+      <workItem from="1560756930360" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="Refactor">
       <created>1557475701968</created>
@@ -1019,7 +1019,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560763412074</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Interface refactor for merging data between systems">
+      <created>1560763551464</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1560763551464</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Interface refactor for merging data between systems">
+      <created>1560763784492</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1560763784492</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1055,7 +1069,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211857000" />
+    <option name="totallyTimeSpent" value="212482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1217,9 +1231,9 @@
     <MESSAGE value="Updated Imove object from date to duration. and change locatie for it" />
     <MESSAGE value="Added status controller&#10;&#10;update Bill generate function with http request" />
     <MESSAGE value="Jenkins file update" />
-    <MESSAGE value="Interface refactor for merging data between systems" />
     <MESSAGE value="test methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="test methode" />
+    <MESSAGE value="Interface refactor for merging data between systems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface refactor for merging data between systems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1774,8 +1788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        <state relative-caret-position="125">
+          <caret line="139" column="20" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
