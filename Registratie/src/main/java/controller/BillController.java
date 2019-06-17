@@ -155,8 +155,8 @@ public class BillController {
                     .routeParam("date", String.valueOf(calendar.getTimeInMillis()))
                     .asString();
 
-            return  new Date().toString();
-           // return jsonResponse.getBody();
+
+           return jsonResponse.getBody();
         }catch (Exception e){
             e.printStackTrace();
 
