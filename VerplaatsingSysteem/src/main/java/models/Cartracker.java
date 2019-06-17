@@ -8,7 +8,7 @@ import java.util.List;
 @Entity
 @NamedQueries({
 
-        @NamedQuery(name = "GetRide", query = "select  c  from Cartracker c where c.cartrackerID = :ID AND MONTH(c.beginDateTime) = :date AND YEAR(c.beginDateTime) = :date")
+        @NamedQuery(name = "GetRide", query = "select  c  from Cartracker c where c.cartrackerID = :ID AND MONTH(c.beginDateTime) = MONTH(:date) AND YEAR(c.beginDateTime) = YEAR(:date)")
 })
 public class Cartracker {
     private int cartrackerID;
