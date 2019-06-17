@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class rit implements Irit {
+public class rit  {
 
 
-    private List<Imovement> movements = new ArrayList<>();
+    private List<move> movements = new ArrayList<>();
 
     private Date date;
 
-    @Override
-    public List<Imovement> getMovements() {
+
+    public List<move> getMovements() {
         return movements;
     }
 
-    @Override
+
     public Date GetBeginDateTime() {
         return date;
     }
 
-    public void setMovements(List<Imovement> movements) {
+    public void setMovements(List<move> movements) {
         this.movements = movements;
     }
 
