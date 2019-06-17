@@ -137,7 +137,7 @@ public class BillController {
 
 
     @POST
-    @Path("generate")
+    @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
     public String Generateshit() throws IOException, UnirestException {
 
