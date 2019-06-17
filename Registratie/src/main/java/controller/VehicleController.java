@@ -48,7 +48,8 @@ public class VehicleController {
     @Path("license")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Vehicle> GetallVehiclesLicense( @FormParam("license") String license) {
+    @Consumes(MediaType.APPLICATION_JSON)
+    public List<Vehicle> GetallVehiclesLicense(String license) {
         return vehicleService.GetVehiclesLicense(license);
     }
 
