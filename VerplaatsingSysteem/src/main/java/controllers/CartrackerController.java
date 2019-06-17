@@ -12,6 +12,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -40,7 +41,10 @@ public class CartrackerController {
     @GET
     @Path("/{ID}/{date}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Cartracker> Getartracker(@PathParam("ID") int ID,  @PathParam("date") Date date){
-        return cartrackerService.GetCartracker(ID,date);
+    public List<Cartracker> Getartracker(@PathParam("ID") int ID,  @PathParam("date") int date){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(date);
+
+        return cartrackerService.GetCartracker(ID,calendar.getTime());
     }
 }
