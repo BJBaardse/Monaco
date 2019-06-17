@@ -136,7 +136,7 @@ public class BillController {
     }
 
 
-    @POST
+    @GET
     @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
     public String Generateshit() throws  UnirestException {
