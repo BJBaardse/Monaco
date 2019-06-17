@@ -139,7 +139,7 @@ public class BillController {
     @GET
     @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
-    public String Generateshit() throws  UnirestException {
+    public String Generateshit() {
         try {
 
             Vehicle vehicleobj = vehicleService.GetVehicles(1);
@@ -148,7 +148,9 @@ public class BillController {
                     .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
                     .routeParam("date", new Date().toString())
                     .asString();
-            return jsonResponse.getBody();
+
+            return  new Date().toString();
+           // return jsonResponse.getBody();
         }catch (Exception e){
             e.printStackTrace();
 
