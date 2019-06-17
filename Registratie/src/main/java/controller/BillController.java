@@ -78,7 +78,7 @@ public class BillController {
 
 //        rit ritobj = new rit();
 //
-//        ritobj.setDate(new Date());
+//        ritobj.setBeginDateTime(new Date());
 //
 //        List<Imovement> imovements = new ArrayList<>();
 //

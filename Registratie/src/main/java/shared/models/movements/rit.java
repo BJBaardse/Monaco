@@ -9,7 +9,13 @@ public class rit implements Irit {
 
     private List<move> movements = new ArrayList<>();
 
-    private Date date;
+    private Date beginDateTime;
+
+    private Date endDateTime;
+
+    private Double totalDistance;
+
+    private Double totalDuration;
 
 
     public List<move> getMovements() {
@@ -18,14 +24,42 @@ public class rit implements Irit {
 
 
     public Date GetBeginDateTime() {
-        return date;
+        return beginDateTime;
     }
 
     public void setMovements(List<move> movements) {
         this.movements = movements;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setBeginDateTime(Date beginDateTime) {
+        this.beginDateTime = beginDateTime;
+    }
+
+    public Date getBeginDateTime() {
+        return beginDateTime;
+    }
+
+    public Date getEndDateTime() {
+        return endDateTime;
+    }
+
+    public void setEndDateTime(Date endDateTime) {
+        this.endDateTime = endDateTime;
+    }
+
+    public Double getTotalDistance() {
+        return totalDistance;
+    }
+
+    public void setTotalDistance(Double totalDistance) {
+        this.totalDistance = totalDistance;
+    }
+
+    public Double getTotalDuration() {
+        return totalDuration;
+    }
+
+    public void setTotalDuration(Double totalDuration) {
+        this.totalDuration = totalDuration;
     }
 }

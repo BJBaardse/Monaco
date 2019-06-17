@@ -5,7 +5,7 @@ import java.util.Date;
 public class move implements Imovement {
 
     private Double distance;
-    private String street;
+    private String streetName;
     private Date date;
 
     private Double duration;
@@ -17,7 +17,7 @@ public class move implements Imovement {
 
     @Override
     public String GetStreetName() {
-        return street;
+        return streetName;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class move implements Imovement {
     }
 
     public void setStreet(String street) {
-        this.street = street;
+        this.streetName = street;
     }
 
     public void setDate(Date date) {
