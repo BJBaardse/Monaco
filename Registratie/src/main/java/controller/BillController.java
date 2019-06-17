@@ -114,14 +114,14 @@ public class BillController {
 
 
 
-        HttpResponse<JsonNode> jsonResponse = Unirest.get("http://localhost:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
+        HttpResponse<JsonNode> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
                 .routeParam("ID", String.valueOf(vehicle.getCartrackerID()))
                 .routeParam("date", date.toString())
                 .asJson();
 
 
 
-
+        System.out.println(jsonResponse.getBody());
         List<Irit> rides = new ArrayList<>();
         jsonResponse.getBody().getArray();
         for(Object s : jsonResponse.getBody().getArray()){
