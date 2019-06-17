@@ -15,6 +15,7 @@ import shared.models.Vehicle;
 import shared.models.billing.Bill;
 import shared.models.Role;
 import shared.models.billing.BillLogic;
+import shared.models.billing.Ride;
 import shared.models.movements.Imovement;
 import shared.models.movements.Irit;
 import shared.models.movements.move;
@@ -129,11 +130,11 @@ public class BillController {
             System.out.println(jsonResponse.getBody());
             List<Irit> rides = new ArrayList<>();
 
-            Type listType = new TypeToken<List<Irit>>() {
+            Type listType = new TypeToken<List<rit>>() {
             }.getType();
 
             rides.addAll(gson.fromJson(jsonResponse.getBody().toString(), listType));
-            
+
             return rides;
 
         }catch (Exception e)
