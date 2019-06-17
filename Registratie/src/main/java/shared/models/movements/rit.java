@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class rit  {
+public class rit implements Irit {
 
 
     private List<move> movements = new ArrayList<>();
