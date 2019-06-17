@@ -76,8 +76,11 @@ public class BillController {
 
         Vehicle vehicleobj = vehicleService.GetVehicles(vehicle);
 
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
 
-        List<Irit> rides = Createbill(vehicleobj,new Date());
+
+        List<Irit> rides = Createbill(vehicleobj,calendar.getTimeInMillis());
 
 //        rit ritobj = new rit();
 //
@@ -108,15 +111,14 @@ public class BillController {
     }
 
 
-    private List<Irit> Createbill(Vehicle vehicle,Date date) throws IOException, UnirestException {
+    private List<Irit> Createbill(Vehicle vehicle,long date) throws IOException, UnirestException {
 
         Gson gson = new GsonBuilder().create();
 
 
-
         HttpResponse<JsonNode> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
                 .routeParam("ID", String.valueOf(vehicle.getCartrackerID()))
-                .routeParam("date", date.toString())
+                .routeParam("date", String.valueOf(date))
                 .asJson();
 
 
@@ -127,6 +129,7 @@ public class BillController {
         for(Object s : jsonResponse.getBody().getArray()){
             rides.add(gson.fromJson(jsonResponse.getBody().toString(),Irit.class));
         }
+
 
 
 //        Bill bill = billLogic.CalculateBill(rides,vehicle);
@@ -144,9 +147,12 @@ public class BillController {
 
             Vehicle vehicleobj = vehicleService.GetVehicles(1);
 
+            Calendar calendar = Calendar.getInstance();
+            calendar.setTime(new Date());
+
             HttpResponse<String> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
                     .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
-                    .routeParam("date", new Date().toString())
+                    .routeParam("date", String.valueOf(calendar.getTimeInMillis()))
                     .asString();
 
             return  new Date().toString();
