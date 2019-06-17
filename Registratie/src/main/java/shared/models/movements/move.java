@@ -6,7 +6,7 @@ public class move implements Imovement {
 
     private Double distance;
     private String streetName;
-    private Date date;
+//    private Date date;
 
     private Double duration;
 
@@ -29,9 +29,9 @@ public class move implements Imovement {
         this.duration = duration;
     }
 
-    public Date getDate() {
+    /*public Date getDate() {
         return date;
-    }
+    }*/
 
 
     public void setDistance(double distance) {
@@ -42,7 +42,7 @@ public class move implements Imovement {
         this.streetName = street;
     }
 
-    public void setDate(Date date) {
+    /*public void setDate(Date date) {
         this.date = date;
-    }
+    }*/
 }
