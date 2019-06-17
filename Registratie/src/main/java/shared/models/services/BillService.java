@@ -8,6 +8,7 @@ import shared.models.billing.Ride;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.Date;
 import java.util.List;
 
 @Stateless
@@ -58,6 +59,15 @@ public class BillService {
         em.getTransaction().commit();
 
         return bill;
+    }
+
+
+    public List<Bill> GetAllbyYear(Date date){
+        return em.createNamedQuery("BillYear", Bill.class).setParameter("date",date).getResultList();
+    }
+
+    public List<Bill> GetAllbyUserandYear(int id, Date date){
+        return em.createNamedQuery("BillYearUser", Bill.class).setParameter("date",date).setParameter("ID",id).getResultList();
     }
 
 

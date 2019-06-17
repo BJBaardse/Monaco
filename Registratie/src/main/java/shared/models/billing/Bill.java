@@ -11,7 +11,9 @@ import java.util.List;
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Allbill", query = "select  b  from Bill b"),
-        @NamedQuery(name = "Userbills", query = "select  b  from Bill b where user.id = :ID ")
+        @NamedQuery(name = "Userbills", query = "select  b  from Bill b where user.id = :ID "),
+        @NamedQuery(name = "BillYear", query = "select b from  Bill b where  YEAR(b.date) = YEAR(:date) "),
+        @NamedQuery(name = "BillYearUser", query = "select b from  Bill b where  YEAR(b.date) = YEAR(:date) AND  b.user.id = :ID")
 })
 public class Bill {
     @Id

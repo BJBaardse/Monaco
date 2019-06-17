@@ -54,12 +54,34 @@ public class BillController {
     }
 
 
+    @JWT(Permissions = Role.ADMINISTRATION, Usercheck = false)
+    @GET
+    @Path("date")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Bill> getAll(Date date){
+
+        return billService.GetAllbyYear(date);
+    }
+
+
+
+
     @JWT(Permissions = Role.USER)
     @GET
     @Path("user/all")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Bill> getAllUser(){
         return billService.GetUserID(user.getId());
+    }
+
+
+    @JWT(Permissions = Role.USER)
+    @GET
+    @Path("user/date")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Bill> getAllUser(Date date)
+    {
+        return billService.GetAllbyUserandYear(user.getId(),date);
     }
 
     //@JWT(Permissions = Role.ADMINISTRATION)
