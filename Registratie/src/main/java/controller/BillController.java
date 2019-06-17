@@ -2,7 +2,6 @@ package controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
@@ -15,24 +14,16 @@ import shared.models.Vehicle;
 import shared.models.billing.Bill;
 import shared.models.Role;
 import shared.models.billing.BillLogic;
-import shared.models.billing.Ride;
-import shared.models.movements.Imovement;
 import shared.models.movements.Irit;
-import shared.models.movements.move;
 import shared.models.movements.rit;
 import shared.models.services.BillService;
 import shared.models.services.VehicleService;
-import sun.net.www.http.HttpClient;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.*;
 
 @Path("/bill")
@@ -154,25 +145,16 @@ public class BillController {
     @GET
     @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
-    public String Generateshit() {
-        try {
+    public List<Irit> Generateshit() throws IOException, UnirestException {
+
 
             Vehicle vehicleobj = vehicleService.GetVehicles(1);
 
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(new Date());
 
-            HttpResponse<JsonNode> jsonResponse = Unirest.get("http://192.168.25.110:8080/VerplaatsingSysteem/Cartracker/{ID}/{date}")
-                    .routeParam("ID", String.valueOf(vehicleobj.getCartrackerID()))
-                    .routeParam("date", String.valueOf(calendar.getTimeInMillis()))
-                    .asJson();
+            return Createbill(vehicleobj,calendar.getTimeInMillis());
 
 
-           return jsonResponse.getBody().getArray().toString();
-        }catch (Exception e){
-            e.printStackTrace();
-
-            return "shit not working check logs:   " + e.toString();
-        }
     }
 }
