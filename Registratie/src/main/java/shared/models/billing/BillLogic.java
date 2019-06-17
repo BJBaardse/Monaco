@@ -6,6 +6,8 @@ import shared.models.Vehicle;
 import shared.models.enums.Energy;
 import shared.models.movements.Imovement;
 import shared.models.movements.Irit;
+import shared.models.movements.move;
+import shared.models.movements.rit;
 import shared.models.services.KilometertariefService;
 import shared.models.services.VehicleService;
 
@@ -54,10 +56,10 @@ public class BillLogic {
     }
 
 
-    public Bill CalculateBill(List<Irit> rits, Vehicle vehicle){
+    public Bill CalculateBill(List<rit> rits, Vehicle vehicle){
 
         List<Ride> rides = new ArrayList<>();
-        for(Irit rit : rits){
+        for(rit rit : rits){
             rides.add(CalculateRide(rit,vehicle));
         }
 
@@ -86,7 +88,7 @@ public class BillLogic {
         Calendar time = Calendar.getInstance();
         time.setTimeInMillis(rit.GetBeginDateTime().getTime());
         //Data from move interface
-        for(Imovement m : rit.getMovements()){
+        for(move m : rit.getMovements()){
             //Convert duration to time Date
             time.setTimeInMillis(time.getTimeInMillis() + m.getDuration().longValue());
             //Convert movement interface to Movement object for billing

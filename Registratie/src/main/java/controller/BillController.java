@@ -74,7 +74,7 @@ public class BillController {
         calendar.setTime(new Date());
 
 
-        List<Irit> rides = Createbill(vehicleobj,calendar.getTimeInMillis());
+        List<rit> rides = Createbill(vehicleobj,calendar.getTimeInMillis());
 
 //        rit ritobj = new rit();
 //
@@ -105,7 +105,7 @@ public class BillController {
     }
 
 
-    private List<Irit> Createbill(Vehicle vehicle,long date) throws IOException, UnirestException {
+    private List<rit> Createbill(Vehicle vehicle,long date) throws IOException, UnirestException {
 
         Gson gson = new GsonBuilder().create();
 
@@ -119,7 +119,7 @@ public class BillController {
         try {
 
             System.out.println(jsonResponse.getBody());
-            List<Irit> rides = new ArrayList<>();
+            List<rit> rides = new ArrayList<>();
 
             Type listType = new TypeToken<List<rit>>() {
             }.getType();
@@ -145,7 +145,7 @@ public class BillController {
     @GET
     @Path("generate2")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Irit> Generateshit() throws IOException, UnirestException {
+    public List<rit> Generateshit() throws IOException, UnirestException {
 
 
             Vehicle vehicleobj = vehicleService.GetVehicles(1);
