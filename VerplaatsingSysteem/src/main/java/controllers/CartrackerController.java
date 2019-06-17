@@ -41,7 +41,7 @@ public class CartrackerController {
     @GET
     @Path("/{ID}/{date}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Cartracker> Getartracker(@PathParam("ID") int ID,  @PathParam("date") int date){
+    public List<Cartracker> Getartracker(@PathParam("ID") int ID,  @PathParam("date") long date){
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(date);
 
