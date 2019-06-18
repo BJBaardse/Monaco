@@ -1,4 +1,5 @@
 import controllers.CartrackerController;
+import controllers.StatusController;
 import controllers.filter.CorsFilter;
 
 import javax.ws.rs.ApplicationPath;
@@ -17,5 +18,6 @@ public class ApplicationConfig extends Application {
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(CartrackerController.class);
         resources.add(CorsFilter.class);
+        resources.add(StatusController.class);
     }
 }
