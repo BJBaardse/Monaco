@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="added bill by year all and by year by user">
+    <list default="true" id="8e4cd5b1-f567-4aeb-9841-c9cb0ab5add7" name="Default" comment="added quarry parms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/VehicleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/BillController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,14 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+            <state relative-caret-position="-1336">
+              <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1964#1965#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/BillService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="68" column="41" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="41" />
+            <state relative-caret-position="137">
+              <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/billing/Bill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="-306">
+              <caret line="15" column="128" selection-start-line="15" selection-start-column="126" selection-end-line="15" selection-end-column="128" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#0#22#1" expanded="true" />
@@ -120,13 +119,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/VehicleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+            <state relative-caret-position="262">
+              <caret line="51" column="61" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1285#1286#0" expanded="true" />
+                <element signature="e#1350#1351#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -240,8 +241,8 @@
         <option value="$PROJECT_DIR$/src/main/java/shared/models/services/VehicleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/shared/models/billing/Bill.java" />
         <option value="$PROJECT_DIR$/src/main/java/shared/models/services/BillService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/BillController.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/VehicleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/BillController.java" />
       </list>
     </option>
   </component>
@@ -281,10 +282,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="405" />
-    <option name="y" value="120" />
-    <option name="width" value="1945" />
-    <option name="height" value="1105" />
+    <option name="x" value="273" />
+    <option name="y" value="-27" />
+    <option name="width" value="1943" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -797,28 +798,7 @@
       <workItem from="1559900489113" duration="2616000" />
       <workItem from="1560335606073" duration="21523000" />
       <workItem from="1560686508051" duration="28000" />
-      <workItem from="1560756930360" duration="9977000" />
-    </task>
-    <task id="LOCAL-00010" summary="unit test bill and kilometertarief">
-      <created>1557852102150</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1557852102150</updated>
-    </task>
-    <task id="LOCAL-00011" summary="pom.xml test">
-      <created>1557924655051</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1557924655052</updated>
-    </task>
-    <task id="LOCAL-00012" summary="pom.xml test jenkins">
-      <created>1557925007334</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1557925007335</updated>
+      <workItem from="1560756930360" duration="12184000" />
     </task>
     <task id="LOCAL-00013" summary="pom.xml test jenkins2">
       <created>1557925515856</created>
@@ -1142,7 +1122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560769650940</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="bug fix vehicle controller">
+      <created>1560769892792</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1560769892792</updated>
+    </task>
+    <task id="LOCAL-00060" summary="bug fix vehicle controller">
+      <created>1560770038356</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1560770038356</updated>
+    </task>
+    <task id="LOCAL-00061" summary="added quarry parms">
+      <created>1560841565564</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1560841565564</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1178,7 +1179,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218152000" />
+    <option name="totallyTimeSpent" value="220359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1205,7 +1206,7 @@
       <window_info id="EJB" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34844193" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34844193" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1317,8 +1318,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Als rekeningrijder wil ik een lijst van facturen&#10;endpoint&#10;billservice&#10;bill object&#10;user object added list of bills" />
-    <MESSAGE value="BillLogic in progress added function for creating movement list from 2 interfaces" />
     <MESSAGE value="Bill logic added bill calculation to generate bill from interfaces" />
     <MESSAGE value="Bill logci bug fixes&#10;bill logic endpoint working with mock data" />
     <MESSAGE value="bill temp objects" />
@@ -1342,14 +1341,16 @@
     <MESSAGE value="plz work" />
     <MESSAGE value="Working &#10;added get vehicle based on kenteken" />
     <MESSAGE value="added bill by year all and by year by user" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bill by year all and by year by user" />
+    <MESSAGE value="bug fix vehicle controller" />
+    <MESSAGE value="added quarry parms" />
+    <option name="LAST_COMMIT_MESSAGE" value="added quarry parms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/VehicleController.java</url>
-          <line>93</line>
+          <line>94</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1462,19 +1463,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/BillController.java</url>
-          <line>147</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/BillController.java</url>
-          <line>134</line>
+          <line>139</line>
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/BillController.java</url>
-          <line>148</line>
+          <line>153</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
@@ -1895,10 +1896,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/VehicleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-257">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/VehicleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="51" column="61" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1350#1351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/BillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/billing/Bill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="-306">
+          <caret line="15" column="128" selection-start-line="15" selection-start-column="126" selection-end-line="15" selection-end-column="128" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#0#22#1" expanded="true" />
@@ -1909,38 +1939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/VehicleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shared/models/services/BillService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="68" column="41" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/BillController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/VehicleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="41" lean-forward="true" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        <state relative-caret-position="-1336">
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

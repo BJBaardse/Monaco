@@ -58,9 +58,12 @@ public class BillController {
     @GET
     @Path("date")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Bill> getAll(@QueryParam("date")Date date){
+    public List<Bill> getAll(@QueryParam("date")Long date){
 
-        return billService.GetAllbyYear(date);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(date);
+
+        return billService.GetAllbyYear(calendar.getTime());
     }
 
 
@@ -79,9 +82,11 @@ public class BillController {
     @GET
     @Path("user/date")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Bill> getAllUser(@QueryParam("date") Date date)
+    public List<Bill> getAllUser(@QueryParam("date") Long date)
     {
-        return billService.GetAllbyUserandYear(user.getId(),date);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(date);
+        return billService.GetAllbyUserandYear(user.getId(),calendar.getTime());
     }
 
     //@JWT(Permissions = Role.ADMINISTRATION)
