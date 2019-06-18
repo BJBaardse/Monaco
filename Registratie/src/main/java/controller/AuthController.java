@@ -55,7 +55,7 @@ public class AuthController {
     public Response RegisterUser(@FormParam("Name") String name,
                                      @FormParam("password") String password,@FormParam("lastname") String lastname,@FormParam("email") String email, @FormParam("BSN") int BSN) {
 
-        User u = new User(name,lastname,email,password,new ArrayList<Role>(Collections.singleton(Role.DEFAULT)),BSN);
+        User u = new User(name,lastname,email,password,new ArrayList<Role>(Collections.singleton(Role.USER)),BSN);
         try {
 //            String username = credentials.getUsername();
 //            String password = credentials.getPassword();
