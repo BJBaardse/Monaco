@@ -58,7 +58,7 @@ public class BillController {
     @GET
     @Path("date")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Bill> getAll(Date date){
+    public List<Bill> getAll(@QueryParam("date")Date date){
 
         return billService.GetAllbyYear(date);
     }
@@ -79,7 +79,7 @@ public class BillController {
     @GET
     @Path("user/date")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Bill> getAllUser(Date date)
+    public List<Bill> getAllUser(@QueryParam("date") Date date)
     {
         return billService.GetAllbyUserandYear(user.getId(),date);
     }

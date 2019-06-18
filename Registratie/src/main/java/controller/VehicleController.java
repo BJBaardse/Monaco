@@ -94,6 +94,5 @@ public class VehicleController {
     public List<Brand> Brand(){
         List<Brand> brand = new ArrayList<>(Arrays.asList(Brand.AUDI,Brand.BMW,Brand.McLaren,Brand.Mercedes,Brand.Porsche));
         return brand;
-
     }
 }
