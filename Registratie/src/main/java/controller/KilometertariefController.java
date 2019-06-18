@@ -85,5 +85,14 @@ public class KilometertariefController {
     }
 
 
+    @GET
+    @Path("get/street")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<KilometertariefStreet> getstreet(@QueryParam("street") String street) {
+        return kilometertariefService.GetStreet(street);
+    }
+
+
+
 
 }

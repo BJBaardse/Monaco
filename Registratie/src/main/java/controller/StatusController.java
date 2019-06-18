@@ -9,7 +9,6 @@ public class StatusController {
 
     @GET
     public Response status(){
-
         return Response.ok().build();
     }
 }
