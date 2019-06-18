@@ -88,6 +88,21 @@ public class VehicleController {
 
     }
 
+    @JWT(Permissions = {Role.ADMINISTRATION})
+    @Path("ADD/{ID}")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Vehicle ADDVehicle(Vehicle vehicle, @PathParam("ID") int userid) throws Exception {
+        User userobj = userService.GetUserBSN(userid);
+        if(userobj == null){
+            throw new Exception("User BSN doesn't exist");
+        }
+        vehicle.setOwner(userobj);
+        vehicleService.CreateVehicle(vehicle);
+        return vehicle;
+    }
+
     @Path("brand")
     @GET
     @Produces(MediaType.APPLICATION_JSON)

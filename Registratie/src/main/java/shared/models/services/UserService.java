@@ -49,6 +49,13 @@ public class UserService {
         return u;
     }
 
+    public User GetUserBSN(int ID){
+
+        User u =em.createNamedQuery("BSN", User.class).setParameter("ID", ID).getSingleResult();
+
+        return u;
+    }
+
     public User UpdateUser(User user, int ID){
         user.setId(ID);
         em.getTransaction().begin();

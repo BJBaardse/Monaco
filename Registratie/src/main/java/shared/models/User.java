@@ -18,7 +18,8 @@ import java.util.List;
 @Table(name ="Users")
 @NamedQueries({
         @NamedQuery(name = "login", query = "select  u  from User u where u.email = :email  AND u.password = :password"),
-        @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID")
+        @NamedQuery(name = "ID", query = "select  u  from User u where u.id = :ID"),
+        @NamedQuery(name = "BSN", query = "select  u  from User u where u.BSN = :ID")
 })
 @JsonIgnoreProperties(ignoreUnknown = false)
 public class User implements Serializable {
