@@ -49,7 +49,7 @@ public class VehicleController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public List<Vehicle> GetallVehiclesLicense(String license) {
+    public List<Vehicle> GetallVehiclesLicense(@QueryParam("license")String license) {
         return vehicleService.GetVehiclesLicense(license);
     }
 
