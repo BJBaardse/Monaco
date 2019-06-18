@@ -23,14 +23,14 @@ public class Bill {
     private Date date;
     private Double price;
     private int Kilometers;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinTable()
     private List<Ride> rides = new ArrayList<>();
 
     @ManyToOne
     private Vehicle vehicle;
 
-    @ManyToOne( fetch = FetchType.EAGER)
+    @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "bills", nullable = false)
     private User user;
 
