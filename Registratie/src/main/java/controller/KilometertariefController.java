@@ -47,7 +47,7 @@ public class KilometertariefController {
 
     @JWT(Permissions = {Role.ADMINISTRATION}, Usercheck = false)
     @PUT
-    @Path("engery")
+    @Path("enegry")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public boolean Addstreet(KilometertariefEnergy kilometertarief) {
